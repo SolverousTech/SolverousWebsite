@@ -1,6 +1,13 @@
+import logo from '../../assets/solverous_logo.png';
+
 function Navbar() {
   return (
-    <h1>This is the navbar</h1>
+    <header>
+      <img src={logo} alt="logo" />
+      <nav>
+
+      </nav>
+    </header>
   );
 }
 
