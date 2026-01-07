@@ -1,22 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/solverous_logo.png';
 import Button from '../Buttons/button';
 
 function Navbar() {
   // Opening of hamburger menu
   const [isOpen, setIsOpen] = useState(false);
+  // Scrolled effect 
+  const [scrolled, setScrolled] = useState(false);
   // For nav links
   const navLinks = ["Home", "Services", "Clients", "About Us", "FAQs"];
 
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
   return (
-    <header className='flex flex-row items-center w-fit my-[1rem] mx-[2.063rem] md:my-4 md:mx-[7.438rem] relative'>
+    <header className='flex flex-row items-center w-fit sticky top-0 bg-white z-50'>
       {/* Logo */}
-      <div>
+      <div className='p-2 my-[1rem] ml-[2.063rem] md:my-3 md:ml-[7.438rem]'>
         <img src={logo} alt="logo" className='w-[17%] md:w-[10%]' />
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden text-[0.93rem] md:flex cursor-pointer text-[#003058] flex-row items-center space-x-12 w-full">
+      <nav className="hidden text-[0.93rem] md:flex cursor-pointer text-[#003058] flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]">
         {navLinks.map((link) => (
           <a
             key={link}
@@ -31,14 +42,14 @@ function Navbar() {
       </nav>
 
       {/* Mobile Hamburger */}
-      <div className="md:hidden ml-auto">
+      <div className="md:hidden ml-auto my-[1rem] mr-[2.063rem] md:my-3 md:mr-[7.438rem]">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="focus:outline-none"
         >
           {/* Simple hamburger icon */}
           <svg
-            className="w-6 h-6 text-[#003058]"
+            className="w-7 h-7 text-[#003058]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -64,7 +75,7 @@ function Navbar() {
 
       {/* Mobile Menu with Smooth Transition */}
       <div
-        className={`absolute top-12 left-0 w-full bg-white md:hidden shadow-lg overflow-hidden transition-all duration-500 ease-in-out py-4 space-y-4`}
+        className={`absolute top-16 left-0 w-full bg-white md:hidden shadow-lg overflow-hidden transition-all duration-500 ease-in-out py-4 space-y-4`}
         style={{
           maxHeight: isOpen ? "500px" : "0px",
           opacity: isOpen ? 1 : 0,
