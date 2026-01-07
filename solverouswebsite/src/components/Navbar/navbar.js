@@ -3,23 +3,25 @@ import logo from '../../assets/solverous_logo.png';
 import Button from '../Buttons/button';
 
 function Navbar() {
+  // Opening of hamburger menu
   const [isOpen, setIsOpen] = useState(false);
+  // For nav links
   const navLinks = ["Home", "Services", "Clients", "About Us", "FAQs"];
 
   return (
-    <header className=' flex flex-row items-center w-fit my-[1rem] mx-[2.063rem] md:my-4 md:mx-[7.438rem]'>
+    <header className='flex flex-row items-center w-fit my-[1rem] mx-[2.063rem] md:my-4 md:mx-[7.438rem] relative'>
       {/* Logo */}
-      <div >
-        <img src={logo} alt="logo" className=' w-[17%] md:w-[10%] ' />
+      <div>
+        <img src={logo} alt="logo" className='w-[17%] md:w-[10%]' />
       </div>
 
       {/* Desktop Navigation */}
-      <nav className=" hidden text-[0.93rem] md:flex cursor-pointer text-[#003058] flex-row items-center space-x-12 w-full">
+      <nav className="hidden text-[0.93rem] md:flex cursor-pointer text-[#003058] flex-row items-center space-x-12 w-full">
         {navLinks.map((link) => (
           <a
             key={link}
             href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-            className="hover:font-bold hover:underline transition-all duration-200"
+            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95"
           >
             {link}
           </a>
@@ -60,14 +62,20 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="absolute top-12 bottom-0 left-0 w-full bg-white md:hidden shadow-lg py-4 flex flex-col items-center space-y-4 ">
+      {/* Mobile Menu with Smooth Transition */}
+      <div
+        className={`absolute top-12 left-0 w-full bg-white md:hidden shadow-lg overflow-hidden transition-all duration-500 ease-in-out py-4 space-y-4`}
+        style={{
+          maxHeight: isOpen ? "500px" : "0px",
+          opacity: isOpen ? 1 : 0,
+        }}
+      >
+        <div className="flex flex-col items-center py-4 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-              className="hover:font-bold hover:underline transition-all duration-200 text-[#003058] text-[1.25rem] "
+              className=" hover:font-bold hover:underline transition-all duration-200 text-[#003058] text-[1.25rem] active:scale-95 "
               onClick={() => setIsOpen(false)}
             >
               {link}
@@ -75,7 +83,7 @@ function Navbar() {
           ))}
           <Button title="Contact Us" type="none" />
         </div>
-      )}
+      </div>
     </header>
   );
 }
