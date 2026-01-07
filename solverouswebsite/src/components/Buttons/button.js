@@ -12,9 +12,9 @@ function Button({
       type="button"
     //   onClick={}
       className={`
-        cursor-pointer w-fit py-2 px-4 rounded-lg
-        text-sm font-medium transition-all duration-300
-        bg-[#007EE6] text-white hover:bg-[#066dc2]
+        cursor-pointer w-fit py-4 px-[9.13rem] md:py-2 md:px-4 rounded-lg
+        text-sm transition-all duration-300
+        bg-[#007EE6] text-white hover:bg-[#066dc2] md:text-[0.93rem] text-[1.25rem]
         ${buttonCustomStyle}
       `}
     >
