@@ -11,13 +11,13 @@ function Navbar() {
   const navLinks = ["Home", "Services", "Clients", "About Us", "FAQs"];
 
   useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 10);
-  };
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
 
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header className='flex flex-row items-center w-fit sticky top-0 bg-white z-50'>
@@ -32,13 +32,13 @@ function Navbar() {
           <a
             key={link}
             href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95"
+            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95 text-md"
           >
             {link}
           </a>
         ))}
 
-        <Button title="Contact Us" type="none" />
+        <Button title="Contact Us" type="none" buttonCustomStyle='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4' />
       </nav>
 
       {/* Mobile Hamburger */}
@@ -86,13 +86,13 @@ function Navbar() {
             <a
               key={link}
               href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-              className=" hover:font-bold hover:underline transition-all duration-200 text-[#003058] text-[1.25rem] active:scale-95 "
+              className=" hover:font-bold hover:underline transition-all duration-200 text-[#003058] text-xl active:scale-95 "
               onClick={() => setIsOpen(false)}
             >
               {link}
             </a>
           ))}
-          <Button title="Contact Us" type="none" />
+          <Button title="Contact Us" type="none" buttonCustomStyle='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4' />
         </div>
       </div>
     </header>

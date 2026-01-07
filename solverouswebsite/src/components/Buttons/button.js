@@ -12,13 +12,13 @@ function Button({
       type="button"
     //   onClick={}
       className={`
-        cursor-pointer w-fit py-4 px-[30%] md:py-2 md:px-4 rounded-lg
+        cursor-pointer w-fit rounded-lg
         transition-all duration-300 active:scale-95
-        bg-[#007EE6] text-white hover:bg-[#066dc2] md:text-[0.93rem] text-[1.25rem]
+        md:text-[0.93rem] text-xl
         ${buttonCustomStyle}
       `}
     >
-      Contact Us
+      {title}
     </button>
   );
 }
