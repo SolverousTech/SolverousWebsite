@@ -27,12 +27,12 @@ function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden text-[0.93rem] md:flex cursor-pointer text-[#003058] flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]">
+      <nav className="hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]">
         {navLinks.map((link) => (
           <a
             key={link}
             href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95 text-md"
+            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95 "
           >
             {link}
           </a>
@@ -86,7 +86,7 @@ function Navbar() {
             <a
               key={link}
               href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-              className=" hover:font-bold hover:underline transition-all duration-200 text-[#003058] text-xl active:scale-95 "
+              className=" hover:font-bold hover:underline transition-all duration-200 p_white_bg active:scale-95 "
               onClick={() => setIsOpen(false)}
             >
               {link}

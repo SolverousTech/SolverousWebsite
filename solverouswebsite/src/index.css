@@ -13,11 +13,78 @@ body {
   @apply font-body;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-heading;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* General Margin */
+.body_margin {
+  margin-left: 2.063rem
+    /* 33.008px */
+  ;
+  margin-right: 2.063rem
+    /* 33.008px */
+  ;
+}
+
+/* Why Choose Us 3 reasons flex format */
+.reasons_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Why Choose Us 3 reasons gap with each other */
+.reasons_space_between {
+  @apply space-y-3 md:space-y-1 space-x-0 md:space-x-2;
+}
+
+/* Why Choose Us 3 reasons circle icon container style */
+.reasons_icon_container {
+  @apply bg-[#007EE6] rounded-full flex justify-center items-center;
+}
+
+/* Why Choose Us 3 reasons margin style */
+.reasons_margin {
+  @apply m-auto md:m-0;
+}
+
+/* h5 title style */
+.h5_title {
+  @apply font-bold text-[1.5rem] md:text-xl;
+}
+
+/* Paragraph format in blue/dark bg */
+.p_blue_bg {
+  @apply text-white text-xl md:text-[0.93rem];
+}
+
+/* Paragraph format in white bg */
+.p_white_bg {
+  @apply text-[#004D8C] text-xl md:text-[0.93rem];
+}
+
+@media (min-width: 768px) {
+  .body_margin {
+    margin-left: 7.438rem
+      /* 119.008px */
+    ;
+    margin-right: 7.438rem
+      /* 119.008px */
+    ;
+  }
+
+  .reasons_flex {
+    display: flex;
+    flex-direction: row;
+  }
 }
