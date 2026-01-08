@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/navbar";
 import HomeBg from "../../assets/home_bg.png";
 import OfferBg from "../../assets/offer_bg.png";
-import TrustedBg from "../../assets/trusted_bg.png";
+import ProcessBg from "../../assets/process_bg.png";
 import Button from '../../components/Buttons/button';
 import SecondSec from '../../assets/second_section_image.png';
 import Automation from '../../assets/first_reason.png';
@@ -9,6 +9,7 @@ import Target from '../../assets/second_reason.png';
 import Scaling from '../../assets/third_reason.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
+import SolverousProcess from '../../assets/process1.png';
 
 function Home() {
   // For bakground images
@@ -22,8 +23,8 @@ function Home() {
     marginTop: "0px",
   };
 
-  const trustedBg = {
-    backgroundImage: `url(${TrustedBg})`,
+  const processBg = {
+    backgroundImage: `url(${ProcessBg})`,
     marginTop: "0px",
   };
 
@@ -102,35 +103,54 @@ function Home() {
             </p>
           </div>
           <div className=" p-4 bg-white shadow-lg rounded-2xl ">
-            <img src={HomebakerLogo} alt="Partner Logo" className="w-44 md:w-36" />
+            <img src={HomebakerLogo} alt="Homebaker Logo" className="w-44 md:w-36" />
           </div>
         </section>
 
         {/* HOW WE BRING IDEAS TO LIFE */}
-        <section style={trustedBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[100vh] text-center items-center content-center space-y-8 ">
+        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[125vh] text-center items-center content-center space-y-8 ">
           <div className=" body_margin  ">
             <h3 className="text-[2rem] md:text-3xl font-bold text-white ">How We Bring Ideas to Life</h3>
             <p className=" p_blue_bg ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
           </div>
 
-          <div className=" body_margin flex flex-col md:flex-row ">
+          <div className=" body_margin flex flex-col space-y-4 ">
             {/* ABOVE PROCESS */}
-            <div className="flex flex-row space-x-[20%] justify-center">
+            <div className="flex flex-col md:flex-row space-x-[13%] justify-center">
               {/* FIRST ABOVE PROCESS */}
-              <div className=" bg-white p-7 w-[25%] rounded-xl content-center ">
+              <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
                 <h5 className=" h5_title text-[#004D8C] text-left ">Strategize & Plan</h5>
                 <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">We craft a tailored strategy — selecting the right technologies, outlining timelines, and defining milestones to ensure transparency and alignment.</p>
               </div>
               {/* SECOND ABOVE PROCESS */}
-              <div className=" bg-white p-7 w-[25%] rounded-xl content-center ">
+              <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
                 <h5 className=" h5_title text-[#004D8C] text-left ">Test & Refine</h5>
                 <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Before launch, we rigorously test everything — from performance and security to user experience — ensuring a flawless, reliable outcome.</p>
               </div>
             </div>
 
             {/* LINE AND ICONS REPRSENTING PROCESS */}
-            <div className="flex flex-row">
-              
+            <div className=" flex justify-center ">
+              <img src={SolverousProcess} alt="Solverous Process" className="w-44 md:w-full" />
+            </div>
+
+            {/* BELOW PROCESS */}
+            <div className="flex flex-col md:flex-row space-x-[13%] justify-center">
+              {/* FIRST BELOW PROCESS */}
+              <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
+                <h5 className=" h5_title text-[#004D8C] text-left ">Discover & Define</h5>
+                <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">We start by understanding your business, objectives, and challenges. Through detailed discussions and research, we define the scope and outcomes you need.</p>
+              </div>
+              {/* SECOND BELOW PROCESS */}
+              <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
+                <h5 className=" h5_title text-[#004D8C] text-left ">Design & Build</h5>
+                <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Our team designs intuitive interfaces and develops scalable, high-performance solutions using modern tools and best practices.</p>
+              </div>
+              {/* THIRD BELOW PROCESS */}
+              <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
+                <h5 className=" h5_title text-[#004D8C] text-left ">Launch & Optimize</h5>
+                <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Once deployed, we monitor closely, gather feedback, and continuously improve your solution for maximum impact and long-term success.</p>
+              </div>
             </div>
 
           </div>
