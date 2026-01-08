@@ -9,7 +9,7 @@ import Target from '../../assets/second_reason.png';
 import Scaling from '../../assets/third_reason.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
-import SolverousProcess from '../../assets/process1.png';
+import ResponsivePicture from "../../components/Image/image_process";
 
 function Home() {
   // For bakground images
@@ -131,7 +131,7 @@ function Home() {
 
             {/* LINE AND ICONS REPRSENTING PROCESS */}
             <div className=" flex justify-center ">
-              <img src={SolverousProcess} alt="Solverous Process" className="w-44 md:w-full" />
+              <ResponsivePicture/>
             </div>
 
             {/* BELOW PROCESS */}
@@ -152,6 +152,7 @@ function Home() {
                 <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Once deployed, we monitor closely, gather feedback, and continuously improve your solution for maximum impact and long-term success.</p>
               </div>
             </div>
+
           </div>
         </section>
       </main>
