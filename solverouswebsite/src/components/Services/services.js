@@ -21,9 +21,9 @@ function Services() {
             {/* LEFT ARROW */}
             <button
                 onClick={() => scroll("left")}
-                className="absolute left-[3rem] top-1/2 -translate-y-1/2 z-10
-                   bg-[#007EE6] text-white shadow-lg rounded-full pl-[1.25rem] pr-[1.36rem] py-[1rem]
-                   hover:scale-110 transition"
+                className="absolute left-8 md:left-[6rem] top-1/2 -translate-y-1/2 z-10
+                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1.25rem] pr-[1.36rem] py-[1rem]
+                   hover:scale-110 transition active:scale-100"
             >
                 ◀
             </button>
@@ -34,9 +34,9 @@ function Services() {
                 className=" body_margin flex flex-row gap-6 overflow-x-hidden scroll-smooth snap-x snap-mandatory scrollbar-hide px-10 "
             >
                 {/* SERVICE 1 */}
-                <li className="bg-white w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center ">
+                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center ">
                     <div className=" w-fit flex justify-center ">
-                        <img src={Websites} alt="Modern Website" className=" w-[70%] " />
+                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -50,9 +50,9 @@ function Services() {
                 </li>
 
                 {/* SERVICE 2 */}
-                <li className="bg-white w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
+                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
                     <div className=" w-fit flex justify-center ">
-                        <img src={Websites} alt="Modern Website" className=" w-[70%] " />
+                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -65,9 +65,9 @@ function Services() {
                 </li>
 
                 {/* SERVICE 3 */}
-                <li className="bg-white w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
+                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
                     <div className=" w-fit flex justify-center ">
-                        <img src={Websites} alt="Modern Website" className=" w-[70%] " />
+                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -80,9 +80,9 @@ function Services() {
                 </li>
 
                 {/* SERVICE 4 */}
-                <li className="bg-white w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
+                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-xl snap-start flex-shrink-0 content-center">
                     <div className=" w-fit flex justify-center ">
-                        <img src={Websites} alt="Modern Website" className=" w-[70%] " />
+                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -98,9 +98,9 @@ function Services() {
             {/* RIGHT ARROW */}
             <button
                 onClick={() => scroll("right")}
-                className="absolute right-[3rem] top-1/2 -translate-y-1/2 z-10
-                   bg-[#007EE6] text-white shadow-lg rounded-full pl-[1.36rem] pr-[1.25rem] py-[1rem]
-                   hover:scale-110 transition"
+                className="absolute right-8 md:right-[6rem] top-1/2 -translate-y-1/2 z-10
+                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1.36rem] pr-[1.25rem] py-[1rem]
+                   hover:scale-110 transition active:scale-100"
             >
                 ▶
             </button>
