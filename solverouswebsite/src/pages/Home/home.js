@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Navbar from "../../components/Navbar/navbar";
 import HomeBg from "../../assets/home_bg.png";
 import OfferBg from "../../assets/offer_bg.png";
@@ -8,23 +7,18 @@ import Automation from '../../assets/first_reason.png';
 import Target from '../../assets/second_reason.png';
 import Scaling from '../../assets/third_reason.png';
 import Services from "../../components/Services/services";
+import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 
 function Home() {
   // For bakground images
   const homeBg = {
     backgroundImage: `url(${HomeBg})`,
-    height: "110vh",
     marginTop: "0px",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
   };
 
   const offerBg = {
     backgroundImage: `url(${OfferBg})`,
-    height: "110vh",
     marginTop: "0px",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
   };
 
   return (
@@ -32,14 +26,14 @@ function Home() {
       <Navbar />
       <main>
         {/* HOME SECTION */}
-        <section style={homeBg} className=" content-center space-y-8 md:space-y-3 ">
+        <section style={homeBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] content-center space-y-8 md:space-y-3 ">
           <div className=" space-y-1 ">
-            <h1 className=" font-bold text-white text-[2.5rem] md:text-4xl body_margin flex flex-col w-fit ">YOUR VISION, <span className="text-[#007EE6]">OUR INNOVATION</span></h1>
+            <h1 className=" font-bold text-white text-[2.5rem] md:text-4xl body_margin flex flex-col w-fit [text-shadow:0_4px_12px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#007EE6]">OUR INNOVATION</span></h1>
             <p className=" p_blue_bg body_margin md:w-[35%] ">At Solverous, we build future-ready solutions that transform how businesses operate, connect, and grow—driving innovation and success.</p>
           </div>
           <div className="flex flex-row body_margin space-x-5 md:space-x-3 ">
-            <Button title="Explore Our Services" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] " />
-            <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 " />
+            <Button title="Explore Our Services" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] shadow-lg " />
+            <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 shadow-lg " />
           </div>
         </section>
 
@@ -85,14 +79,26 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section style={offerBg} className=" text-center content-center space-y-8 ">
+        <section style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[115vh] text-center content-center space-y-8 ">
           <div className=" body_margin ">
             <h3 className="text-[2rem] md:text-3xl font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
             </p>
           </div>
 
-          <Services/>
+          <Services />
+        </section>
+
+        {/* TRUSTED BY */}
+        <section className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
+          <div className=" w-full md:w-[50%] space-y-2 ">
+            <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">Trusted By</h3>
+            <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
+            </p>
+          </div>
+          <div className=" p-4 bg-white shadow-lg rounded-2xl ">
+            <img src={HomebakerLogo} alt="Partner Logo" className="w-44 md:w-36"/>
+          </div>
         </section>
       </main>
     </>
