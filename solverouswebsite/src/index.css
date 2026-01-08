@@ -73,11 +73,6 @@ code {
   @apply text-[#004D8C] text-xl md:text-[0.93rem];
 }
 
-.responsive-background {
-  width: 11rem;
-  background-image: url('./assets/process1.png'); /* Default (small screen) */
-}
-
 @media (min-width: 768px) {
   .body_margin {
     margin-left: 7.438rem
@@ -91,10 +86,5 @@ code {
   .reasons_flex {
     display: flex;
     flex-direction: row;
-  }
-
-  .responsive-background {
-    width: 100%;
-    background-image: url('./assets/process2.png'); /* Large screen image */
   }
 }

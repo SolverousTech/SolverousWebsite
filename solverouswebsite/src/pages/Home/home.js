@@ -152,7 +152,6 @@ function Home() {
                 <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Once deployed, we monitor closely, gather feedback, and continuously improve your solution for maximum impact and long-term success.</p>
               </div>
             </div>
-
           </div>
         </section>
       </main>
