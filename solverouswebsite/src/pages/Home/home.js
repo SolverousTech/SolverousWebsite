@@ -13,7 +13,7 @@ function Home() {
   // For bakground images
   const homeBg = {
     backgroundImage: `url(${HomeBg})`,
-    height: "95vh",
+    height: "110vh",
     marginTop: "0px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -25,19 +25,6 @@ function Home() {
     marginTop: "0px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-  };
-
-  // For scroll
-  const listRef = useRef(null);
-
-  const scroll = (direction) => {
-    if (!listRef.current) return;
-
-    const scrollAmount = 400; // adjust as needed
-    listRef.current.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
   };
 
   return (
