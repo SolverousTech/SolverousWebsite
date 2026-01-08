@@ -1,7 +1,7 @@
 // ResponsivePicture.jsx
 import React from 'react';
-import desktopImage from '../../assets/process1.png'; // Import paths if using module bundlers
-import phoneImage from '../../assets/process2.png';
+import desktopImage from '../../assets/desktop_process.png'; // Import paths if using module bundlers
+import phoneImage from '../../assets/phone_process.png';
 
 const ResponsivePicture = () => {
   return (
