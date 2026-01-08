@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/navbar";
 import HomeBg from "../../assets/home_bg.png";
 import OfferBg from "../../assets/offer_bg.png";
+import TrustedBg from "../../assets/trusted_bg.png";
 import Button from '../../components/Buttons/button';
 import SecondSec from '../../assets/second_section_image.png';
 import Automation from '../../assets/first_reason.png';
@@ -18,6 +19,11 @@ function Home() {
 
   const offerBg = {
     backgroundImage: `url(${OfferBg})`,
+    marginTop: "0px",
+  };
+
+  const trustedBg = {
+    backgroundImage: `url(${TrustedBg})`,
     marginTop: "0px",
   };
 
@@ -85,7 +91,6 @@ function Home() {
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
             </p>
           </div>
-
           <Services />
         </section>
 
@@ -97,7 +102,37 @@ function Home() {
             </p>
           </div>
           <div className=" p-4 bg-white shadow-lg rounded-2xl ">
-            <img src={HomebakerLogo} alt="Partner Logo" className="w-44 md:w-36"/>
+            <img src={HomebakerLogo} alt="Partner Logo" className="w-44 md:w-36" />
+          </div>
+        </section>
+
+        {/* HOW WE BRING IDEAS TO LIFE */}
+        <section style={trustedBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[100vh] text-center items-center content-center space-y-8 ">
+          <div className=" body_margin  ">
+            <h3 className="text-[2rem] md:text-3xl font-bold text-white ">How We Bring Ideas to Life</h3>
+            <p className=" p_blue_bg ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
+          </div>
+
+          <div className=" body_margin flex flex-col md:flex-row ">
+            {/* ABOVE PROCESS */}
+            <div className="flex flex-row space-x-[20%] justify-center">
+              {/* FIRST ABOVE PROCESS */}
+              <div className=" bg-white p-7 w-[25%] rounded-xl content-center ">
+                <h5 className=" h5_title text-[#004D8C] text-left ">Strategize & Plan</h5>
+                <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">We craft a tailored strategy — selecting the right technologies, outlining timelines, and defining milestones to ensure transparency and alignment.</p>
+              </div>
+              {/* SECOND ABOVE PROCESS */}
+              <div className=" bg-white p-7 w-[25%] rounded-xl content-center ">
+                <h5 className=" h5_title text-[#004D8C] text-left ">Test & Refine</h5>
+                <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Before launch, we rigorously test everything — from performance and security to user experience — ensuring a flawless, reliable outcome.</p>
+              </div>
+            </div>
+
+            {/* LINE AND ICONS REPRSENTING PROCESS */}
+            <div className="flex flex-row">
+              
+            </div>
+
           </div>
         </section>
       </main>
