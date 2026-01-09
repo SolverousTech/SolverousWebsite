@@ -1,7 +1,9 @@
 import Navbar from "../../components/Navbar/navbar";
+import FAQItem from "../../components/FAQs/faqs";
 import HomeBg from "../../assets/home_bg.png";
 import OfferBg from "../../assets/offer_bg.png";
 import ProcessBg from "../../assets/process_bg.png";
+import FAQsBg from "../../assets/faqs_bg.png";
 import Button from '../../components/Buttons/button';
 import SecondSec from '../../assets/second_section_image.png';
 import Automation from '../../assets/first_reason.png';
@@ -35,6 +37,11 @@ function Home() {
     marginTop: "0px",
   };
 
+  const faqsBg = {
+    backgroundImage: `url(${FAQsBg})`,
+    marginTop: "0px",
+  };
+
   return (
     <>
       <Navbar />
@@ -52,40 +59,40 @@ function Home() {
         </section>
 
         {/* WHY CHOOSE SOLVEROUS SECTION */}
-        <section className=" body_margin my-12 md:my-16 flex flex-col md:flex-row space-x-0 md:space-x-6 space-y-12 md:space-y-0 items-center ">
-          <div className=" w-full md:w-[70%] h-full ">
-            <img src={SecondSec} alt="People in A Meeting" className='w-full md:w-[90%] ' />
+        <section className=" body_margin my-12 md:my-16 flex flex-col md:flex-row space-x-0 md:space-x-10 space-y-12 md:space-y-0 items-center ">
+          <div className=" w-full md:w-[90%] h-full ">
+            <img src={SecondSec} alt="People in A Meeting" className='w-full md:w-full ' />
           </div>
           <div className=" space-y-6 md:space-y-3 w-full text-center md:text-left ">
             <div>
               <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
-              <p className=" p_white_bg w-[96%] md:w-[80%] m-auto md:m-0 ">We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.</p>
+              <p className=" p_white_bg w-[96%] md:w-[90%] m-auto md:m-0 ">We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.</p>
             </div>
             <div className=" space-y-8 md:space-y-4">
               {/* FIRST REASON */}
               <div className="reasons_flex reasons_space_between items-center ">
-                <div className=" reasons_icon_container w-[6.2rem] md:w-[6.5rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className=" reasons_icon_container w-[6.2rem] md:w-[7.3rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Cutting-Edge Technology</h5>
-                  <p className=" w-[93%] md:w-[75%] p_white_bg reasons_margin ">We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.</p>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.</p>
                 </div>
               </div>
 
               {/* SECOND REASON */}
               <div className="reasons_flex reasons_space_between items-center ">
-                <div className="reasons_icon_container w-[6.2rem] md:w-[8.5rem] h-24 md:h-16 "><img src={Target} alt="Target Icon" /></div>
+                <div className="reasons_icon_container w-[6.2rem] md:w-[9.8rem] h-24 md:h-16 "><img src={Target} alt="Target Icon" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Client-Centric Approach</h5>
-                  <p className=" w-[95%] md:w-[75%] p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
+                  <p className=" w-[95%] md:w-[90%] p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
                 </div>
               </div>
 
               {/* THIRD REASON */}
               <div className=" reasons_flex reasons_space_between items-center ">
-                <div className="reasons_icon_container w-[6.2rem] h-24 md:h-16 "><img src={Scaling} alt="Scaling Icon" /></div>
+                <div className="reasons_icon_container w-[6.2rem] md:w-[7.2rem] h-24 md:h-16 "><img src={Scaling} alt="Scaling Icon" /></div>
                 <div >
                   <h5 className=" h5_title text-[#004D8C] ">Scalable & Secure Solutions</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-[75%] ">Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.</p>
+                  <p className=" p_white_bg reasons_margin w-[95%] md:w-[95%] ">Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.</p>
                 </div>
               </div>
             </div>
@@ -184,7 +191,7 @@ function Home() {
                   <h5 className=" h5_title text-white ">Our History</h5>
                   <p className=" p_blue_bg ">Founded in January 2024. Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
                 </div>
-                
+
                 {/* OUR VISION */}
                 <div className=" about_container_style ">
                   <h5 className=" h5_title text-white ">Our Vision</h5>
@@ -204,8 +211,22 @@ function Home() {
         {/* 7TH SECTION */}
         <section style={peopleInMeeting} className=" bg-no-repeat bg-cover bg-center h-[70vh] md:h-[50vh] text-center content-center space-y-8 ">
           <div className=" flex flex-col justify-center items-center text-center space-y-4 md:space-y-4">
-            <h3 className="text-[2rem] md:text-3xl font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#007EE6]">Into Digital Solutions</span></h3>
+            <h3 className="text-[2rem] md:text-3xl font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#0889f1]">Digital Solutions</span></h3>
             <p className=" p_blue_bg w-[75%] md:w-[32%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
+          </div>
+        </section>
+
+        {/* FAQs Section */}
+        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[70vh] md:h-[70vh] ">
+          <div className=" body_margin flex flex-row space-x-20 ">
+            <div className="w-fit space-y-6 ">
+              <div className=" w-full md:w-full space-y-2 ">
+                <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
+                <p className=" p_blue_bg w-full ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
+              </div>
+              <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
+            </div>
+            <FAQItem/>
           </div>
         </section>
       </main>
