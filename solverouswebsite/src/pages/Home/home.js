@@ -217,16 +217,16 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[70vh] md:h-[70vh] ">
-          <div className=" body_margin flex flex-row space-x-20 ">
-            <div className="w-fit space-y-6 ">
-              <div className=" w-full md:w-full space-y-2 ">
-                <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
-                <p className=" p_blue_bg w-full ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
-              </div>
-              <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
+        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[135vh] md:h-[90vh] ">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7.438rem] mt-[4rem] md:mt-0 w-[84%] md:w-fit space-y-6 justify-center items-start h-[32%] md:h-[77%] ">
+            <div className=" w-full md:w-full space-y-2 ">
+              <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
+              <p className=" p_blue_bg w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
             </div>
-            <FAQItem/>
+            <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
+          </div>
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:mr-[7.438rem] w-[84%] md:w-[80%] justify-center items-start h-[77%]">
+            <FAQItem />
           </div>
         </section>
       </main>
