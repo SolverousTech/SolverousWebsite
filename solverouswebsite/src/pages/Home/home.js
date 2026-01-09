@@ -235,9 +235,37 @@ function Home() {
         <section className=" body_margin flex flex-row md:flex-col justify-center items-center my-12 ">
           <div className="w-full md:w-[90%] h-full flex flex-row space-x-16">
             <ContactForm />
-            <div className=" w-full md:w-[50%] space-y-2 ">
-              <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">How Can <span className="text-[#007EE6]">We Help?</span></h3>
-              <p className=" p_white_bg ">Have a question or need help? Reach to our dedicated support team. We’re here to help with any inquires you may have.</p>
+            <div className="w-full space-y-6">
+              <div className=" ">
+                <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">How Can <span className="text-[#007EE6]">We Help?</span></h3>
+                <p className=" p_white_bg ">Have a question or need help? Reach to our dedicated support team. We’re here to help with any inquires you may have.</p>
+              </div>
+
+              <div className=" flex flex-col space-y-4 ">
+                {/* PHONE */}
+                <div className="reasons_flex reasons_space_between items-center ">
+                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">+63 921 808 7458</p>
+                </div>
+
+                {/* EMAIL */}
+                <div className="reasons_flex reasons_space_between items-center ">
+                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">solveroustech@gmail.com</p>
+                </div>
+
+                {/* LOCATION */}
+                <div className="reasons_flex reasons_space_between items-center ">
+                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">Antipolo City, 1870 Rizal, Philippines</p>
+                </div>
+              </div>
+              <div className="bg-[#007EE6] h-[0.1rem] w-full"></div>
+              <div className=" items-center flex flex-row w-[100%] justify-end space-x-4 ">
+                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+              </div>
             </div>
           </div>
         </section>
