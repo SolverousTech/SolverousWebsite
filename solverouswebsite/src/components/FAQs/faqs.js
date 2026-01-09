@@ -68,7 +68,7 @@ function FAQItem() {
                         </div>
 
                         <div
-                            className={` w-[90%] overflow-hidden transition-all duration-300
+                            className={` w-full md:w-[90%] overflow-hidden transition-all duration-300
                 ${isOpen ? "max-h-48 opacity-100 mt-4" : "max-h-0 opacity-0"}
               `}
                         >

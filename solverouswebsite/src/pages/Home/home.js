@@ -12,6 +12,7 @@ import Scaling from '../../assets/third_reason.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 import ResponsivePicture from "../../components/Image/image_process";
+import ContactForm from "../../components/Contact/contact";
 import MeetingInTable from "../../assets/meeting_in_table.png";
 import PeopleInMeeting from "../../assets/people_in_meeting3.png";
 
@@ -217,8 +218,8 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[135vh] md:h-[90vh] ">
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7.438rem] mt-[4rem] md:mt-0 w-[84%] md:w-fit space-y-6 justify-center items-start h-[32%] md:h-[77%] ">
+        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[140vh] md:h-[90vh] ">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7.438rem] mt-[3.5rem] md:mt-0 w-[84%] md:w-fit space-y-6 justify-center items-start h-[32%] md:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
@@ -227,6 +228,17 @@ function Home() {
           </div>
           <div className=" mr-[2.063rem] ml-[2.063rem] md:mr-[7.438rem] w-[84%] md:w-[80%] justify-center items-start h-[77%]">
             <FAQItem />
+          </div>
+        </section>
+
+        {/* CONTACTS SECTION */}
+        <section className=" body_margin flex flex-row md:flex-col justify-center items-center my-12 ">
+          <div className="w-full md:w-[90%] h-full flex flex-row space-x-16">
+            <ContactForm />
+            <div className=" w-full md:w-[50%] space-y-2 ">
+              <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">How Can <span className="text-[#007EE6]">We Help?</span></h3>
+              <p className=" p_white_bg ">Have a question or need help? Reach to our dedicated support team. We’re here to help with any inquires you may have.</p>
+            </div>
           </div>
         </section>
       </main>

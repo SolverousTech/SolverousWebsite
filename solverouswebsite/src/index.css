@@ -78,6 +78,16 @@ code {
   @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] h-96 md:h-44 flex flex-col p-6 rounded-2xl md:rounded-xl justify-center;
 }
 
+/* Contact Form Styles */
+.input_style {
+  @apply bg-transparent border border-white rounded-md p-2;
+}
+
+.label_style {
+  @apply p_blue_bg flex flex-col;
+}
+
+
 @media (min-width: 768px) {
   .body_margin {
     margin-left: 7.438rem
