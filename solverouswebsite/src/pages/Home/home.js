@@ -11,6 +11,7 @@ import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 import ResponsivePicture from "../../components/Image/image_process";
 import MeetingInTable from "../../assets/meeting_in_table.png";
+import PeopleInMeeting from "../../assets/people_in_meeting3.png";
 
 function Home() {
   // For bakground images
@@ -21,6 +22,11 @@ function Home() {
 
   const offerBg = {
     backgroundImage: `url(${OfferBg})`,
+    marginTop: "0px",
+  };
+
+  const peopleInMeeting = {
+    backgroundImage: `url(${PeopleInMeeting})`,
     marginTop: "0px",
   };
 
@@ -192,6 +198,14 @@ function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* 7TH SECTION */}
+        <section style={peopleInMeeting} className=" bg-no-repeat bg-cover bg-center h-[70vh] md:h-[50vh] text-center content-center space-y-8 ">
+          <div className=" flex flex-col justify-center items-center text-center space-y-4 md:space-y-4">
+            <h3 className="text-[2rem] md:text-3xl font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#007EE6]">Into Digital Solutions</span></h3>
+            <p className=" p_blue_bg w-[75%] md:w-[32%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
           </div>
         </section>
       </main>
