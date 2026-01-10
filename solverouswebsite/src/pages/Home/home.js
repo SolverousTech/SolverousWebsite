@@ -52,17 +52,36 @@ function Home() {
 
   return (
     <>
-      <Navbar />
       <main>
         {/* HOME SECTION */}
-        <section style={homeBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] content-center space-y-8 md:space-y-3 ">
+        <section id="home" style={homeBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] content-center space-y-8 md:space-y-3 ">
           <div className=" space-y-1 ">
             <h1 className=" font-bold text-white text-[2.5rem] md:text-4xl body_margin flex flex-col w-fit [text-shadow:0_4px_6px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#007EE6]">OUR INNOVATION</span></h1>
             <p className=" p_blue_bg body_margin md:w-[35%] ">At Solverous, we build future-ready solutions that transform how businesses operate, connect, and grow—driving innovation and success.</p>
           </div>
           <div className="flex flex-row body_margin space-x-5 md:space-x-3 ">
-            <Button title="Explore Our Services" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
-            <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
+            <Button
+              title="Explore Our Services"
+              type="none"
+              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              btnFunc={() => {
+                document.getElementById("services")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            />
+            <Button
+              title="Contact Us"
+              type="none"
+              buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              btnFunc={() => {
+                document.getElementById("contact-us")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            />
           </div>
         </section>
 
@@ -108,7 +127,7 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[115vh] text-center content-center space-y-8 ">
+        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[115vh] text-center content-center space-y-8 ">
           <div className=" body_margin ">
             <h3 className="text-[2rem] md:text-3xl font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
@@ -118,7 +137,7 @@ function Home() {
         </section>
 
         {/* TRUSTED BY */}
-        <section className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
+        <section id="clients" className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
           <div className=" w-full md:w-[50%] space-y-2 ">
             <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">Trusted <span className="text-[#007EE6]">By</span></h3>
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
@@ -181,7 +200,7 @@ function Home() {
         </section>
 
         {/* ABOUT US */}
-        <section className=" body_margin text-center content-center space-y-8 md:space-y-10 my-12 md:my-16 ">
+        <section id="about-us" className=" body_margin text-center content-center space-y-8 md:space-y-10 my-12 md:my-16 ">
           <div className=" flex flex-col justify-center items-center text-center space-y-2 md:space-y-0">
             <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">About <span className="text-[#007EE6]">Us</span></h3>
             <p className=" p_white_bg w-[96%] md:w-[67%] ">Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
@@ -225,13 +244,23 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[140vh] md:h-[90vh] ">
+        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[140vh] md:h-[90vh] ">
           <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7.438rem] mt-[3.5rem] md:mt-0 w-[84%] md:w-fit space-y-6 justify-center items-start h-[32%] md:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
             </div>
-            <Button title="Contact Us" type="none" buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] " />
+            <Button
+              title="Contact Us"
+              type="none"
+              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              btnFunc={() => {
+                document.getElementById("contact-us")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            />
           </div>
           <div className=" mr-[2.063rem] ml-[2.063rem] md:mr-[7.438rem] w-[84%] md:w-[80%] justify-center items-start h-[77%]">
             <FAQItem />
@@ -239,7 +268,7 @@ function Home() {
         </section>
 
         {/* CONTACTS SECTION */}
-        <section className=" body_margin flex flex-col md:flex-row justify-center items-center my-12 ">
+        <section id="contact-us" className=" body_margin flex flex-col md:flex-row justify-center items-center my-12 ">
           <div className="w-full md:w-[90%] h-full flex flex-col md:flex-row space-x-0 md:space-x-16 items-center space-y-6 md:space-y-0">
             <ContactForm />
             <div className="w-full space-y-6">
@@ -269,9 +298,12 @@ function Home() {
               </div>
               <div className="bg-[#007EE6] h-[0.1rem] w-full"></div>
               <div className=" items-center flex flex-row w-[100%] justify-end space-x-4 ">
-                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Automation Icon"/></a>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="Automation Icon"/></a>
-                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="Automation Icon"/></a>
+                {/* FACEBOOK */}
+                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Automation Icon" /></a>
+                {/* WHATSAPP */}
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="Automation Icon" /></a>
+                {/* LINKEDIN */}
+                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="Automation Icon" /></a>
               </div>
             </div>
           </div>

@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +15,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply font-body;
+}
+
+section {
+  @apply scroll-mt-28 md:scroll-mt-20 /* match navbar height */
 }
 
 h1,
@@ -93,7 +101,7 @@ code {
 }
 
 .socmed_container {
-  @apply flex justify-center items-center w-[5rem] md:w-[3.8rem] h-[4.5rem] md:h-14 rounded-xl md:rounded-lg active:scale-95;
+  @apply flex justify-center items-center w-[5rem] md:w-[3.7rem] h-[4.5rem] md:h-14 rounded-xl md:rounded-lg active:scale-95;
 }
 
 /* How can we help contact icons size and container */
@@ -103,6 +111,11 @@ code {
 
 .contact_icons_container {
   @apply flex flex-row space-y-3 md:space-y-1 space-x-6 md:space-x-2 items-center;
+}
+
+/* Footer icons */
+.footer_icons {
+  @apply flex justify-center items-center border border-white w-[4rem] md:w-[3rem] h-[3.8rem] md:h-11 rounded-lg;
 }
 
 @media (min-width: 768px) {

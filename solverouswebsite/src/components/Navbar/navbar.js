@@ -38,7 +38,13 @@ function Navbar() {
           </a>
         ))}
 
-        <Button title="Contact Us" type="none" buttonCustomStyle='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4' />
+        <a href="#contact-us" className='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4 rounded-lg'>
+          <Button
+            title="Contact Us"
+            type="none"
+            buttonCustomStyle=""
+          />
+        </a>
       </nav>
 
       {/* Mobile Hamburger */}
@@ -92,7 +98,13 @@ function Navbar() {
               {link}
             </a>
           ))}
-          <Button title="Contact Us" type="none" buttonCustomStyle='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4' />
+          <a href="#contact-us" className='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4 rounded-xl'>
+            <Button
+              title="Contact Us"
+              type="none"
+              buttonCustomStyle=""
+            />
+          </a>
         </div>
       </div>
     </header>

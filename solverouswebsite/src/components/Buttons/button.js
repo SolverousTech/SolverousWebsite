@@ -10,7 +10,7 @@ function Button({
   return (
     <button
       type="button"
-    //   onClick={}
+      onClick={btnFunc}
       className={`
         cursor-pointer w-fit rounded-lg
         transition-all duration-300 active:scale-95
