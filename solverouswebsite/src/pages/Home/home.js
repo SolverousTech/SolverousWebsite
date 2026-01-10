@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar/navbar";
 import FAQItem from "../../components/FAQs/faqs";
 import HomeBg from "../../assets/home_bg.png";
 import OfferBg from "../../assets/offer_bg.png";
@@ -21,7 +20,6 @@ import PeopleInMeeting from "../../assets/people_in_meeting3.png";
 import Facebook from "../../assets/facebook.png";
 import WhatsApp from "../../assets/whatsapp.png";
 import LinkedIn from "../../assets/linkedin.png";
-import { Link } from "react-router-dom";
 
 function Home() {
   // For bakground images
