@@ -5,12 +5,12 @@ import ProcessBg from "../../assets/process_bg.png";
 import FAQsBg from "../../assets/faqs_bg.png";
 import Button from '../../components/Buttons/button';
 import SecondSec from '../../assets/second_section_image.png';
-import Automation from '../../assets/first_reason.png';
+import Automation from '../../assets/technology.png';
 import Phone from '../../assets/phone.png';
 import Mail from '../../assets/mail.png';
 import Location from '../../assets/location.png';
-import Target from '../../assets/second_reason.png';
-import Scaling from '../../assets/third_reason.png';
+import Target from '../../assets/target.png';
+import Scaling from '../../assets/scaling.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 import ResponsivePicture from "../../components/Image/image_process";
@@ -96,7 +96,7 @@ function Home() {
             <div className=" space-y-8 md:space-y-4">
               {/* FIRST REASON */}
               <div className="reasons_flex reasons_space_between items-center scale_animation ">
-                <div className=" reasons_icon_container w-[6.2rem] md:w-[7.3rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className=" reasons_icon_container w-[6.2rem] md:w-[7.3rem] h-24 md:h-16 "><img src={Automation} alt="Automation" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Cutting-Edge Technology</h5>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.</p>
@@ -105,7 +105,7 @@ function Home() {
 
               {/* SECOND REASON */}
               <div className="reasons_flex reasons_space_between items-center scale_animation ">
-                <div className="reasons_icon_container w-[6.2rem] md:w-[9.8rem] h-24 md:h-16 "><img src={Target} alt="Target Icon" /></div>
+                <div className="reasons_icon_container w-[6.2rem] md:w-[9.8rem] h-24 md:h-16 "><img src={Target} alt="Target" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Client-Centric Approach</h5>
                   <p className=" w-[95%] md:w-[90%] p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
@@ -114,7 +114,7 @@ function Home() {
 
               {/* THIRD REASON */}
               <div className=" reasons_flex reasons_space_between items-center scale_animation">
-                <div className="reasons_icon_container w-[6.2rem] md:w-[7.2rem] h-24 md:h-16 "><img src={Scaling} alt="Scaling Icon" /></div>
+                <div className="reasons_icon_container w-[6.2rem] md:w-[7.2rem] h-24 md:h-16 "><img src={Scaling} alt="Scaling" /></div>
                 <div >
                   <h5 className=" h5_title text-[#004D8C] ">Scalable & Secure Solutions</h5>
                   <p className=" p_white_bg reasons_margin w-[95%] md:w-[95%] ">Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.</p>
@@ -278,30 +278,30 @@ function Home() {
               <div className=" flex flex-col space-y-4 ">
                 {/* PHONE */}
                 <div className="contact_icons_container ">
-                  <div className=" gradient_bg reasons_icon_container contact_icons "><img src={Phone} alt="Automation Icon" /></div>
+                  <div className=" gradient_bg reasons_icon_container contact_icons "><img src={Phone} alt="Phone" /></div>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">+63 921 808 7458</p>
                 </div>
 
                 {/* EMAIL */}
                 <div className="contact_icons_container">
-                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Mail} alt="Automation Icon" /></a>
+                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Mail} alt="Mail" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">solveroustech@gmail.com</p>
                 </div>
 
                 {/* LOCATION */}
                 <div className="contact_icons_container">
-                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Location} alt="Automation Icon" /></a>
+                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Location} alt="Location" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">Antipolo City, 1870 Rizal, Philippines</p>
                 </div>
               </div>
               <div className="bg-[#007EE6] h-[0.1rem] w-full"></div>
               <div className=" items-center flex flex-row w-[100%] justify-end space-x-4 ">
                 {/* FACEBOOK */}
-                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Automation Icon" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Facebook" /></a>
                 {/* WHATSAPP */}
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="Automation Icon" /></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="WhatsApp" /></a>
                 {/* LINKEDIN */}
-                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="Automation Icon" /></a>
+                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="LinkedIn" /></a>
               </div>
             </div>
           </div>

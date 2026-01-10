@@ -10,7 +10,7 @@ const ResponsivePicture = () => {
       <source media="(min-width: 768px)" srcSet={desktopImage} />
 
       {/* Default image for small screens (and fallback) */}
-      <img src={phoneImage} alt="Responsive example" style={{ width: '100%' }} />
+      <img src={phoneImage} alt="Solverous Process" style={{ width: '100%' }} />
     </picture>
   );
 };

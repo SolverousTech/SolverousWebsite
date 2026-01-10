@@ -23,7 +23,7 @@ function Navbar() {
     <header className='flex flex-row items-center w-fit sticky top-0 bg-white z-50'>
       {/* Logo */}
       <div className='p-2 my-[1rem] ml-[2.063rem] md:my-3 md:ml-[7.438rem]'>
-        <img src={logo} alt="logo" className='w-[17%] md:w-[10%]' />
+        <img src={logo} alt="Solverous logo" className='w-[17%] md:w-[10%]' />
       </div>
 
       {/* Desktop Navigation */}

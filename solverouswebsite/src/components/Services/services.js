@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Websites from "../../assets/websites_mockup.png";
+import Websites from "../../assets/modern_website.png";
 import arrowBack from "../../assets/arrow_back.png"
 import arrowForward from "../../assets/arrow_forward.png"
 
@@ -38,7 +38,7 @@ function Services() {
                 {/* SERVICE 1 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
                     <div className=" w-fit flex justify-center scale_animation ">
-                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
+                        <img src={Websites} alt="Modern Website Development" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -54,7 +54,7 @@ function Services() {
                 {/* SERVICE 2 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
                     <div className=" w-fit flex justify-center scale_animation ">
-                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
+                        <img src={Websites} alt="Cloud and Infrastructure Services" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -69,7 +69,7 @@ function Services() {
                 {/* SERVICE 3 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
                     <div className=" w-fit flex justify-center scale_animation ">
-                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
+                        <img src={Websites} alt="AI and Automation Solutions" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
@@ -84,7 +84,7 @@ function Services() {
                 {/* SERVICE 4 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
                     <div className=" w-fit flex justify-center scale_animation ">
-                        <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
+                        <img src={Websites} alt="Digital Marketing and Customer Engagement" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
                         <h5 className="h5_title text-left text-[#004D8C]">
