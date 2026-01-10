@@ -63,7 +63,7 @@ function Home() {
             <Button
               title="Explore Our Services"
               type="none"
-              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-4 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] transition-all ease-in-out"
               btnFunc={() => {
                 document.getElementById("services")?.scrollIntoView({
                   behavior: "smooth",
@@ -74,7 +74,7 @@ function Home() {
             <Button
               title="Contact Us"
               type="none"
-              buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              buttonCustomStyle=" text-white bg-transparent border border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] py-3 px-[5%] md:py-2 md:px-4 [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] transition-all ease-in-out "
               btnFunc={() => {
                 document.getElementById("contact-us")?.scrollIntoView({
                   behavior: "smooth",
@@ -97,7 +97,7 @@ function Home() {
             </div>
             <div className=" space-y-8 md:space-y-4">
               {/* FIRST REASON */}
-              <div className="reasons_flex reasons_space_between items-center ">
+              <div className="reasons_flex reasons_space_between items-center scale_animation ">
                 <div className=" reasons_icon_container w-[6.2rem] md:w-[7.3rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Cutting-Edge Technology</h5>
@@ -106,7 +106,7 @@ function Home() {
               </div>
 
               {/* SECOND REASON */}
-              <div className="reasons_flex reasons_space_between items-center ">
+              <div className="reasons_flex reasons_space_between items-center scale_animation ">
                 <div className="reasons_icon_container w-[6.2rem] md:w-[9.8rem] h-24 md:h-16 "><img src={Target} alt="Target Icon" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Client-Centric Approach</h5>
@@ -115,7 +115,7 @@ function Home() {
               </div>
 
               {/* THIRD REASON */}
-              <div className=" reasons_flex reasons_space_between items-center ">
+              <div className=" reasons_flex reasons_space_between items-center scale_animation">
                 <div className="reasons_icon_container w-[6.2rem] md:w-[7.2rem] h-24 md:h-16 "><img src={Scaling} alt="Scaling Icon" /></div>
                 <div >
                   <h5 className=" h5_title text-[#004D8C] ">Scalable & Secure Solutions</h5>
@@ -143,7 +143,7 @@ function Home() {
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
             </p>
           </div>
-          <div className=" p-4 bg-white shadow-lg rounded-2xl ">
+          <div className=" p-4 bg-white shadow-lg rounded-2xl hover:shadow-[#004d8cb6] transition-all ease-in-out scale_animation hover:[box-shadow:0px_0px_15px_#004d8cb6] ">
             <img src={HomebakerLogo} alt="Homebaker Logo" className="w-44 md:w-36" />
           </div>
         </section>
@@ -214,19 +214,19 @@ function Home() {
             <div className=" space-y-6 md:space-y-3 w-full text-left ">
               <div className=" space-y-8 md:space-y-4">
                 {/* OUR HISTORY */}
-                <div className=" about_container_style ">
+                <div className=" about_container_style scale_animation ">
                   <h5 className=" h5_title text-white ">Our History</h5>
                   <p className=" p_blue_bg ">Founded in January 2024. Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
                 </div>
 
                 {/* OUR VISION */}
-                <div className=" about_container_style ">
+                <div className=" about_container_style scale_animation ">
                   <h5 className=" h5_title text-white ">Our Vision</h5>
                   <p className=" p_blue_bg ">Our goal is to become a leading provider of innovative web and tech solutions globally. We strive to build a dynamic and inclusive company that fosters creativity and drives success. By shaping the future of technology and digital experiences, we aim to support businesses of all sizes.</p>
                 </div>
 
                 {/* OUR MISSION */}
-                <div className="about_container_style ">
+                <div className="about_container_style scale_animation ">
                   <h5 className=" h5_title text-white ">Our Mission</h5>
                   <p className=" p_blue_bg ">We empower businesses by providing innovative and high-quality digital solutions. Our goal is to help clients achieve their objectives through cutting-edge technology. Additionally, we foster a collaborative and growth-oriented environment that supports both experienced professionals and eager learners.</p>
                 </div>
@@ -253,7 +253,7 @@ function Home() {
             <Button
               title="Contact Us"
               type="none"
-              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] transition-all ease-in-out [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
               btnFunc={() => {
                 document.getElementById("contact-us")?.scrollIntoView({
                   behavior: "smooth",
@@ -286,13 +286,13 @@ function Home() {
 
                 {/* EMAIL */}
                 <div className="contact_icons_container">
-                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 "><img src={Mail} alt="Automation Icon" /></a>
+                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Mail} alt="Automation Icon" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">solveroustech@gmail.com</p>
                 </div>
 
                 {/* LOCATION */}
                 <div className="contact_icons_container">
-                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 "><img src={Location} alt="Automation Icon" /></a>
+                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Location} alt="Automation Icon" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">Antipolo City, 1870 Rizal, Philippines</p>
                 </div>
               </div>

@@ -14,9 +14,9 @@ function Footer() {
                         <p className='text-white text-2xl md:text-[1rem] w-full md:w-[60%]'>Empowering Your Business with Expert Solutions and Insights</p>
                     </div>
                     <div className=" flex flex-row space-x-3 w-fit ">
-                        <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" footer_icons "><img src={Facebook} alt="Automation Icon" /></a>
-                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" footer_icons "><img src={WhatsApp} alt="Automation Icon" /></a>
-                        <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" footer_icons "><img src={LinkedIn} alt="Automation Icon" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={Facebook} alt="Automation Icon" /></a>
+                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={WhatsApp} alt="Automation Icon" /></a>
+                        <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={LinkedIn} alt="Automation Icon" /></a>
                     </div>
                 </div>
                 <div className='flex flex-row text-white space-x-0 md:space-x-16 '>

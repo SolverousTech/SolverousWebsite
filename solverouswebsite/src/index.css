@@ -83,7 +83,7 @@ code {
 
 /* Mission, vision, and history container style */
 .about_container_style {
-  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] h-96 md:h-44 flex flex-col p-6 rounded-2xl md:rounded-xl justify-center;
+  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] hover:bg-gradient-to-b hover:from-[#027FE5] hover:to-[#004D8C] h-96 md:h-44 flex flex-col p-6 rounded-2xl md:rounded-xl justify-center;
 }
 
 /* Contact Form Styles */
@@ -97,7 +97,7 @@ code {
 
 /* Gradient bg */
 .gradient_bg {
-  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] hover:bg-gradient-to-b hover:from-[#004074] hover:to-[#0072cf] cursor-pointer;
+  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] hover:bg-gradient-to-b hover:from-[#1e77c0] hover:to-[#0072cf] transition-all ease-in-out cursor-pointer;
 }
 
 .socmed_container {
@@ -116,6 +116,11 @@ code {
 /* Footer icons */
 .footer_icons {
   @apply flex justify-center items-center border border-white w-[4rem] md:w-[3rem] h-[3.8rem] md:h-11 rounded-lg;
+}
+
+/* Simple scale animation */
+.scale_animation {
+  @apply hover:scale-105 transition-all ease-in-out 
 }
 
 @media (min-width: 768px) {

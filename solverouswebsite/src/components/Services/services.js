@@ -37,7 +37,7 @@ function Services() {
             >
                 {/* SERVICE 1 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
-                    <div className=" w-fit flex justify-center ">
+                    <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
@@ -52,8 +52,8 @@ function Services() {
                 </li>
 
                 {/* SERVICE 2 */}
-                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
-                    <div className=" w-fit flex justify-center ">
+                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
+                    <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
@@ -68,7 +68,7 @@ function Services() {
 
                 {/* SERVICE 3 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
-                    <div className=" w-fit flex justify-center ">
+                    <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
@@ -83,7 +83,7 @@ function Services() {
 
                 {/* SERVICE 4 */}
                 <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
-                    <div className=" w-fit flex justify-center ">
+                    <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Websites} alt="Modern Website" className=" w-[90%] md:w-[70%] " />
                     </div>
                     <div className="space-y-2">
