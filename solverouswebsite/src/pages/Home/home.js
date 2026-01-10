@@ -7,6 +7,9 @@ import FAQsBg from "../../assets/faqs_bg.png";
 import Button from '../../components/Buttons/button';
 import SecondSec from '../../assets/second_section_image.png';
 import Automation from '../../assets/first_reason.png';
+import Phone from '../../assets/phone.png';
+import Mail from '../../assets/mail.png';
+import Location from '../../assets/location.png';
 import Target from '../../assets/second_reason.png';
 import Scaling from '../../assets/third_reason.png';
 import Services from "../../components/Services/services";
@@ -15,6 +18,10 @@ import ResponsivePicture from "../../components/Image/image_process";
 import ContactForm from "../../components/Contact/contact";
 import MeetingInTable from "../../assets/meeting_in_table.png";
 import PeopleInMeeting from "../../assets/people_in_meeting3.png";
+import Facebook from "../../assets/facebook.png";
+import WhatsApp from "../../assets/whatsapp.png";
+import LinkedIn from "../../assets/linkedin.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   // For bakground images
@@ -232,8 +239,8 @@ function Home() {
         </section>
 
         {/* CONTACTS SECTION */}
-        <section className=" body_margin flex flex-row md:flex-col justify-center items-center my-12 ">
-          <div className="w-full md:w-[90%] h-full flex flex-row space-x-16">
+        <section className=" body_margin flex flex-col md:flex-row justify-center items-center my-12 ">
+          <div className="w-full md:w-[90%] h-full flex flex-col md:flex-row space-x-0 md:space-x-16 items-center space-y-6 md:space-y-0">
             <ContactForm />
             <div className="w-full space-y-6">
               <div className=" ">
@@ -243,28 +250,28 @@ function Home() {
 
               <div className=" flex flex-col space-y-4 ">
                 {/* PHONE */}
-                <div className="reasons_flex reasons_space_between items-center ">
-                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className="contact_icons_container ">
+                  <div className=" gradient_bg reasons_icon_container contact_icons "><img src={Phone} alt="Automation Icon" /></div>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">+63 921 808 7458</p>
                 </div>
 
                 {/* EMAIL */}
-                <div className="reasons_flex reasons_space_between items-center ">
-                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className="contact_icons_container">
+                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 "><img src={Mail} alt="Automation Icon" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">solveroustech@gmail.com</p>
                 </div>
 
                 {/* LOCATION */}
-                <div className="reasons_flex reasons_space_between items-center ">
-                  <div className=" reasons_icon_container w-[6.2rem] md:w-[4.6rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <div className="contact_icons_container">
+                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 "><img src={Location} alt="Automation Icon" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">Antipolo City, 1870 Rizal, Philippines</p>
                 </div>
               </div>
               <div className="bg-[#007EE6] h-[0.1rem] w-full"></div>
               <div className=" items-center flex flex-row w-[100%] justify-end space-x-4 ">
-                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
-                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
-                <div className=" reasons_icon_container w-[6.2rem] md:w-[4.1rem] h-24 md:h-16 "><img src={Automation} alt="Automation Icon" /></div>
+                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Automation Icon"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="Automation Icon"/></a>
+                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="Automation Icon"/></a>
               </div>
             </div>
           </div>
