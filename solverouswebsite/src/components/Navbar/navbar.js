@@ -6,7 +6,7 @@ function Navbar() {
   // Opening of hamburger menu
   const [isOpen, setIsOpen] = useState(false);
   // Scrolled effect 
-  const [setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   // For nav links
   const navLinks = ["Home", "Services", "Clients", "About Us", "FAQs"];
 
@@ -27,7 +27,7 @@ function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]">
+      <nav className={scrolled ? "navbar scrolled" : "navbar hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]"}>
         {navLinks.map((link) => (
           <a
             key={link}
