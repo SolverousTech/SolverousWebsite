@@ -68,7 +68,7 @@ code {
 
 /* h5 title style */
 .h5_title {
-  @apply font-bold text-[0.95rem] md:text-lg lg:text-xl;
+  @apply font-bold text-[1rem] md:text-[1.2rem] lg:text-xl;
 }
 
 /* Paragraph format in blue/dark bg */
