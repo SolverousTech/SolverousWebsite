@@ -6,7 +6,7 @@ function Navbar() {
   // Opening of hamburger menu
   const [isOpen, setIsOpen] = useState(false);
   // Scrolled effect 
-  const [scrolled, setScrolled] = useState(false);
+  const [setScrolled] = useState(false);
   // For nav links
   const navLinks = ["Home", "Services", "Clients", "About Us", "FAQs"];
 

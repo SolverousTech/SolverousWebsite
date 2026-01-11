@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 import Facebook from "../../assets/facebook.png";
 import WhatsApp from "../../assets/whatsapp.png";
 import LinkedIn from "../../assets/linkedin.png";
