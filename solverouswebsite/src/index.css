@@ -61,6 +61,10 @@ code {
   @apply bg-[#007EE6] rounded-full flex justify-center items-center;
 }
 
+.reasons_icon_size {
+  @apply h-20 md:h-20 lg:h-[3.8rem] xl:h-[4rem];
+}
+
 /* Why Choose Us 3 reasons margin style */
 .reasons_margin {
   @apply m-auto md:m-0;
