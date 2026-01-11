@@ -73,12 +73,12 @@ code {
 
 /* Paragraph format in blue/dark bg */
 .p_blue_bg {
-  @apply text-white text-[0.85rem] md:text-[1rem] lg:text-[0.93rem];
+  @apply text-white text-[0.87rem] md:text-[1rem] lg:text-[0.93rem];
 }
 
 /* Paragraph format in white bg */
 .p_white_bg {
-  @apply text-[#004D8C] text-[0.85rem] md:text-[1rem] lg:text-[0.93rem];
+  @apply text-[#004D8C] text-[0.87rem] md:text-[1rem] lg:text-[0.93rem];
 }
 
 /* Mission, vision, and history container style */
