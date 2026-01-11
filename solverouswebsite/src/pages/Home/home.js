@@ -105,7 +105,7 @@ function Home() {
 
               {/* SECOND REASON */}
               <div className="reasons_flex reasons_space_between items-center scale_animation ">
-                <div className="reasons_icon_container reasons_icon_size w-[5.5rem] md:w-[14rem] lg:w-[7rem] xl:w-[10rem] "><img src={Target} alt="Target" /></div>
+                <div className="reasons_icon_container reasons_icon_size w-[5.2rem] md:w-[14rem] lg:w-[7rem] xl:w-[10rem] "><img src={Target} alt="Target" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] ">Client-Centric Approach</h5>
                   <p className=" w-[95%] md:w-[80%] lg:w-[90%] p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
