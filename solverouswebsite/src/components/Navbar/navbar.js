@@ -20,32 +20,34 @@ function Navbar() {
   }, []);
 
   return (
-    <header className='flex flex-row items-center w-fit sticky top-0 bg-white z-50'>
+    <header className='flex items-center justify-between sticky top-0 bg-white z-50 '>
       {/* Logo */}
-      <div className='p-2 my-[1rem] ml-[2.063rem] md:my-3 md:ml-[7.438rem]'>
-        <img src={logo} alt="Solverous logo" className='w-[17%] md:w-[10%]' />
+      <div className='my-[1rem] ml-[2.063rem] md:my-3 md:ml-[7.438rem] w-fit'>
+        <img src={logo} alt="Solverous logo" className='w-12 md:w-16 lg:w-16' />
       </div>
 
       {/* Desktop Navigation */}
-      <nav className={scrolled ? "navbar scrolled" : "navbar hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 w-full my-[1rem] mr-[2.063rem] md:my-3 md:mr-[0rem]"}>
-        {navLinks.map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-            className="hover:font-bold hover:underline transition-all duration-200 active:scale-95 "
-          >
-            {link}
-          </a>
-        ))}
+      <div className='w-fit'>
+        <nav className={scrolled ? "hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 md:space-x-8 lg:space-x-12 w-full my-[1rem] md:my-3 mr-[2.063rem] md:mr-[7.438rem]" : "hidden md:flex cursor-pointer p_white_bg flex-row items-center space-x-12 md:space-x-8 lg:space-x-12 w-full my-[1rem] md:my-3 mr-[2.063rem] md:mr-[7.438rem]"}>
+          {navLinks.map((link) => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
+              className="hover:font-bold hover:underline transition-all duration-200 active:scale-95 "
+            >
+              {link}
+            </a>
+          ))}
 
-        <a href="#contact-us" className='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4 rounded-lg'>
-          <Button
-            title="Contact Us"
-            type="none"
-            buttonCustomStyle=""
-          />
-        </a>
-      </nav>
+          <a href="#contact-us" className='text-[#007EE6] bg-transparent border border-[#007EE6] hover:bg-[#007EE6] hover:text-white py-4 px-[30%] md:py-2 md:px-4 rounded-lg'>
+            <Button
+              title="Contact Us"
+              type="none"
+              buttonCustomStyle=""
+            />
+          </a>
+        </nav>
+      </div>
 
       {/* Mobile Hamburger */}
       <div className="md:hidden ml-auto my-[1rem] mr-[2.063rem] md:my-3 md:mr-[7.438rem]">
