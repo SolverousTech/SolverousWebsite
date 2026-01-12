@@ -19,25 +19,25 @@ function Footer() {
                         <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={LinkedIn} alt="Automation Icon" /></a>
                     </div>
                 </div>
-                <div className='flex flex-row text-white space-x-0 md:space-x-16 '>
+                <div className='flex flex-row text-white space-x-0 md:space-x-6 '>
                     <div className=' flex flex-col md:flex-row space-y-10 md:space-y-0 space-x-0 md:space-x-16 '>
                         {/* PRODUCTS LINK */}
                         <div className='w-fit space-y-4'>
                             <h5 className='h5_title'>Products</h5>
                             <div className='space-y-3'>
-                                <p>Luna AI</p>
-                                <p>DTR System</p>
-                                <p>Payroll System</p>
+                                <a href="https://luna.solverous.com/" target="_blank" rel="noopener noreferrer" className='hover:underline'>Luna AI</a>
+                                <p className='hover:underline'>DTR System</p>
+                                <p className='hover:underline'>Payroll System</p>
                             </div>
                         </div>
                         {/* SERVICES LINK */}
                         <div className=' w-[75%] md:w-[50%] space-y-4'>
                             <h5 className='h5_title'>Services</h5>
-                            <div className='space-y-3'>
-                                <p>Modern Website Development</p>
-                                <p>Cloud & Infrastructure Services</p>
-                                <p>AI & Automation Solutions</p>
-                                <p>Digital Marketing & Customer Engagement</p>
+                            <div className='space-y-3 flex flex-col'>
+                                <a href="#services" target="_self" rel="noopener noreferrer" className='hover:underline'>Modern Website Development</a>
+                                <a href="#services" target="_self" rel="noopener noreferrer" className='hover:underline'>Cloud & Infrastructure Services</a>
+                                <a href="#services" target="_self" rel="noopener noreferrer" className='hover:underline'>AI & Automation Solutions</a>
+                                <a href="#services" target="_self" rel="noopener noreferrer" className='hover:underline'>Digital Marketing & Customer Engagement</a>
                             </div>
                         </div>
                     </div>
@@ -45,20 +45,19 @@ function Footer() {
                     {/* COMPANY INFO LINK */}
                     <div className='w-fit space-y-4'>
                         <h5 className='h5_title'>Company</h5>
-                        <div className='space-y-3'>
-                            <p>Home</p>
-                            <p>Services</p>
-                            <p>Clients</p>
-                            <p>About Us</p>
-                            <p>Feedbacks</p>
+                        <div className='space-y-3 flex flex-col'>
+                            <a href="#home" target="_self" rel="noopener noreferrer" className='hover:underline'>Home</a>
+                            <a href="#services" target="_self" rel="noopener noreferrer" className='hover:underline'>Services</a>
+                            <a href="#clients" target="_self" rel="noopener noreferrer" className='hover:underline'>Clients</a>
+                            <a href="#about-us" target="_self" rel="noopener noreferrer" className='hover:underline'>About Us</a>
                         </div>
                     </div>
                     {/* INFORMATION LINK */}
                     <div className='w-fit space-y-4'>
                         <h5 className='h5_title'>Information</h5>
-                        <div className='space-y-3'>
-                            <p>FAQs</p>
-                            <p>Contact</p>
+                        <div className='space-y-3 flex flex-col'>
+                            <a href="#faqs" target="_self" rel="noopener noreferrer" className='hover:underline'>FAQs</a>
+                            <a href="#contact-us" target="_self" rel="noopener noreferrer" className='hover:underline'>Contact</a>
                         </div>
                     </div>
                     </div>
