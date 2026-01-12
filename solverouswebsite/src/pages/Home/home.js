@@ -125,7 +125,7 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[90vh] md:h-[65vh] lg:h-[65vh] xl:h-[115vh] 2xl:h-[70vh] text-center content-center space-y-8 ">
+        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[90vh] md:h-[60vh] lg:h-[65vh] xl:h-[115vh] 2xl:h-[75vh] text-center content-center space-y-8 ">
           <div className=" body_margin ">
             <h3 className="text-[2rem] md:text-3xl font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
