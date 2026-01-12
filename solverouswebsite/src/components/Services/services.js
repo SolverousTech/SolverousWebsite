@@ -27,8 +27,7 @@ function Services() {
             <button
                 onClick={() => scroll("left")}
                 className="absolute left-8 md:left-[6rem] top-1/2 -translate-y-1/2 z-10
-                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1.4rem] pr-[0.8rem] py-[1rem]
-                   hover:scale-110 transition active:scale-100"
+                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1rem] md:pl-[1.4rem] pr-[0.4rem] md:pr-[0.8rem] py-[0.7rem] md:py-[1rem] hover:scale-110 transition active:scale-100"
             >
                 <img src={arrowBack} alt="Arrow Back" />
             </button>
@@ -104,7 +103,7 @@ function Services() {
             <button
                 onClick={() => scroll("right")}
                 className="absolute right-8 md:right-[6rem] top-1/2 -translate-y-1/2 z-10
-                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1.2rem] pr-[1rem] py-[1rem]
+                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1rem] md:pl-[1.4rem] pr-[0.6rem] md:pr-[0.8rem] py-[0.7rem] md:py-[1rem]
                    hover:scale-110 transition active:scale-100"
             >
                 <img src={arrowForward} alt="Arrow Forward" />
