@@ -125,7 +125,7 @@ code {
 
 /* Footer icons */
 .footer_icons {
-  @apply flex justify-center items-center border border-white w-[4rem] md:w-[3rem] h-[3.8rem] md:h-11 rounded-lg;
+  @apply flex justify-center items-center border border-white w-[3.2rem] md:w-[3.7rem] h-[3.2rem] md:h-14 rounded-lg;
 }
 
 /* Simple scale animation */
