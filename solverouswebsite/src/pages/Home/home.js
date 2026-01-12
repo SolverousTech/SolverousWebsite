@@ -234,7 +234,7 @@ function Home() {
         </section>
 
         {/* 7TH SECTION */}
-        <section style={peopleInMeeting} className=" bg-no-repeat bg-cover bg-center h-[60vh] md:h-[30vh] lg:h-[50vh] xl:h-[50vh] 2xl:h-[50vh] text-center content-center space-y-8 ">
+        <section style={peopleInMeeting} className=" bg-no-repeat bg-cover bg-center h-[50vh] md:h-[30vh] lg:h-[50vh] xl:h-[50vh] 2xl:h-[50vh] text-center content-center space-y-8 ">
           <div className=" flex flex-col justify-center items-center text-center space-y-4 md:space-y-4">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#0889f1]">Digital Solutions</span></h3>
             <p className=" p_blue_bg w-[75%] md:w-[55%] lg:w-[32%] xl:w-[32%] 2xl:w-[32%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
