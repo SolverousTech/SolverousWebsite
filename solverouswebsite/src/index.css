@@ -82,12 +82,12 @@ code {
 
 /* Paragraph format in blue/dark bg */
 .p_blue_bg {
-  @apply text-white text-[0.87rem] md:text-[1rem] lg:text-[0.93rem];
+  @apply text-white text-[0.87rem] md:text-[1rem] lg:text-[0.93rem] xl:text-[0.93rem] 2xl:lg:text-[1.5rem];
 }
 
 /* Paragraph format in white bg */
 .p_white_bg {
-  @apply text-[#004D8C] text-[0.87rem] md:text-[1rem] lg:text-[0.93rem];
+  @apply text-[#004D8C] text-[0.87rem] md:text-[1rem] lg:text-[0.93rem] xl:text-[0.93rem] 2xl:lg:text-[1.5rem];
 }
 
 /* Mission, vision, and history container style */
@@ -110,12 +110,12 @@ code {
 }
 
 .socmed_container {
-  @apply flex justify-center items-center w-[5rem] md:w-[3.7rem] h-[4.5rem] md:h-14 rounded-xl md:rounded-lg active:scale-95;
+  @apply flex justify-center items-center w-[3.2rem] md:w-[3.7rem] h-[3.2rem] md:h-14 rounded-xl md:rounded-lg active:scale-95;
 }
 
 /* How can we help contact icons size and container */
 .contact_icons {
-  @apply w-[5.2rem] md:w-[4rem] h-16 md:h-14;
+  @apply w-[4.3rem] md:w-[4rem] lg:w-[4rem] h-14 md:h-14 lg:h-14;
 }
 
 .contact_icons_container {
