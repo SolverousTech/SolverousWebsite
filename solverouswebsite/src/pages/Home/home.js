@@ -90,7 +90,7 @@ function Home() {
           </div>
           <div className=" space-y-6 md:space-y-7 lg:space-y-7 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left ">
             <div className="space-y-0 md:space-y-3 lg:space-y-3 xl:space-y-3">
-              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-white w-full ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
+              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
               <p className=" p_white_bg w-[96%] md:w-full m-auto md:m-0 ">We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.</p>
             </div>
             <div className=" space-y-8 md:space-y-4 lg:space-y-4">
@@ -242,7 +242,7 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] sm:h-[105vh] md:h-[63vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[57vh] space-y-6 sm:space-y-[-6rem] md:space-y-10 lg:space-y-0 ">
+        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] sm:h-fit md:h-[63vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[57vh] space-y-0 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0 ">
           <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3rem] md:mt-10 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
