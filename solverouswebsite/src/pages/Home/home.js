@@ -127,7 +127,7 @@ function Home() {
         {/* WHAT WE OFFER */}
         <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[90vh] md:h-[60vh] lg:h-[60vh] xl:h-[115vh] 2xl:h-[75vh] text-center content-center space-y-8 ">
           <div className=" body_margin ">
-            <h3 className="text-[2rem] md:text-3xl font-bold text-white ">What We Offer</h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
             </p>
           </div>
@@ -137,7 +137,7 @@ function Home() {
         {/* TRUSTED BY */}
         <section id="clients" className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
           <div className=" w-full md:w-[50%] space-y-2 ">
-            <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">Trusted <span className="text-[#007EE6]">By</span></h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-[#004D8C] ">Trusted <span className="text-[#007EE6]">By</span></h3>
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
             </p>
           </div>
@@ -149,7 +149,7 @@ function Home() {
         {/* HOW WE BRING IDEAS TO LIFE */}
         <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[240vh] md:h-[40vh] lg:h-[40vh] xl:h-[110vh] 2xl:h-[85vh] text-center items-center content-center space-y-8 ">
           <div className=" body_margin flex flex-col justify-center items-center space-y-2 md:space-y-0 ">
-            <h3 className="text-[2rem] md:text-3xl w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
             <p className=" p_blue_bg w-[90%] md:w-full ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
           </div>
 
@@ -200,7 +200,7 @@ function Home() {
         {/* ABOUT US */}
         <section id="about-us" className=" body_margin text-center content-center space-y-8 md:space-y-10 my-12 md:my-16 ">
           <div className=" flex flex-col justify-center items-center text-center space-y-2 md:space-y-0">
-            <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">About <span className="text-[#007EE6]">Us</span></h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-[#004D8C] ">About <span className="text-[#007EE6]">Us</span></h3>
             <p className=" p_white_bg w-[96%] md:w-full lg:w-full xl:w-[67%] 2xl:w-[67%] ">Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
           </div>
 
@@ -236,16 +236,16 @@ function Home() {
         {/* 7TH SECTION */}
         <section style={peopleInMeeting} className=" bg-no-repeat bg-cover bg-center h-[50vh] md:h-[30vh] lg:h-[50vh] xl:h-[50vh] 2xl:h-[50vh] text-center content-center space-y-8 ">
           <div className=" flex flex-col justify-center items-center text-center space-y-4 md:space-y-4">
-            <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#0889f1]">Digital Solutions</span></h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white flex flex-col ">Transforming Ideas Into <span className="text-[#0889f1]">Digital Solutions</span></h3>
             <p className=" p_blue_bg w-[75%] md:w-[55%] lg:w-[32%] xl:w-[32%] 2xl:w-[32%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
           </div>
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[120vh] md:h-[65vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[55vh] space-y-6 md:space-y-10 lg:space-y-6 ">
+        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] md:h-[63vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[55vh] space-y-[-2rem] md:space-y-10 lg:space-y-0 ">
           <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3.5rem] md:mt-8 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
-              <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
+              <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] md:w-[90%] lg:w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
             </div>
             <Button
@@ -271,7 +271,7 @@ function Home() {
             <ContactForm />
             <div className="w-full space-y-6">
               <div className=" ">
-                <h3 className="text-[2rem] md:text-3xl font-bold text-[#004D8C] ">How Can <span className="text-[#007EE6]">We Help?</span></h3>
+                <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-[#004D8C] ">How Can <span className="text-[#007EE6]">We Help?</span></h3>
                 <p className=" p_white_bg ">Have a question or need help? Reach to our dedicated support team. We’re here to help with any inquires you may have.</p>
               </div>
 
