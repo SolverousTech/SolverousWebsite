@@ -28,19 +28,19 @@ function Footer() {
                         <div className='w-fit space-y-4'>
                             <h5 className='h5_title'>Products</h5>
                             <ul className="space-y-3">
-                                <li><a href="https://luna.solverous.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Luna AI</a></li>
-                                <li><span>DTR System</span></li>
-                                <li><span>Payroll System</span></li>
+                                <li><a href="https://luna.solverous.com/" target="_blank" rel="noopener noreferrer" className="hover:underline p_blue_bg">Luna AI</a></li>
+                                <li><span className='p_blue_bg'>DTR System</span></li>
+                                <li><span className='p_blue_bg'>Payroll System</span></li>
                             </ul>
                         </div>
                         {/* SERVICES LINK */}
                         <div className=' w-[75%] md:w-[50%] space-y-4'>
                             <h5 className='h5_title'>Services</h5>
                             <ul className="space-y-3">
-                                <li><a href="#services" className="hover:underline">Modern Website Development</a></li>
-                                <li><a href="#services" className="hover:underline">Cloud & Infrastructure</a></li>
-                                <li><a href="#services" className="hover:underline">AI & Automation</a></li>
-                                <li><a href="#services" className="hover:underline">Digital Marketing</a></li>
+                                <li><a href="#services" className="hover:underline p_blue_bg">Modern Website Development</a></li>
+                                <li><a href="#services" className="hover:underline p_blue_bg">Cloud & Infrastructure</a></li>
+                                <li><a href="#services" className="hover:underline p_blue_bg">AI & Automation</a></li>
+                                <li><a href="#services" className="hover:underline p_blue_bg">Digital Marketing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,18 +49,18 @@ function Footer() {
                         <div className='w-fit space-y-4'>
                             <h5 className='h5_title'>Company</h5>
                             <ul className="space-y-3">
-                                <li><a href="#home" className="hover:underline">Home</a></li>
-                                <li><a href="#services" className="hover:underline">Services</a></li>
-                                <li><a href="#clients" className="hover:underline">Clients</a></li>
-                                <li><a href="#about-us" className="hover:underline">About Us</a></li>
+                                <li><a href="#home" className="hover:underline p_blue_bg">Home</a></li>
+                                <li><a href="#services" className="hover:underline p_blue_bg">Services</a></li>
+                                <li><a href="#clients" className="hover:underline p_blue_bg">Clients</a></li>
+                                <li><a href="#about-us" className="hover:underline p_blue_bg">About Us</a></li>
                             </ul>
                         </div>
                         {/* INFORMATION LINK */}
                         <div className='w-fit space-y-4'>
                             <h5 className='h5_title'>Information</h5>
                             <ul className="space-y-3">
-                                <li><a href="#faqs" className="hover:underline">FAQs</a></li>
-                                <li><a href="#contact-us" className="hover:underline">Contact</a></li>
+                                <li><a href="#faqs" className="hover:underline p_blue_bg">FAQs</a></li>
+                                <li><a href="#contact-us" className="hover:underline p_blue_bg">Contact</a></li>
                             </ul>
                         </div>
                     </div>
