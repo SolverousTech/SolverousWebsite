@@ -18,7 +18,8 @@ body {
 }
 
 section {
-  @apply scroll-mt-28 md:scroll-mt-20 /* match navbar height */
+  @apply scroll-mt-28 md:scroll-mt-20
+  /* match navbar height */
 }
 
 h1,
@@ -129,15 +130,15 @@ code {
 
 /* Simple scale animation */
 .scale_animation {
-  @apply hover:scale-105 transition-all ease-in-out 
+  @apply hover:scale-105 transition-all ease-in-out
 }
 
 @media (min-width: 768px) {
   .body_margin {
-    margin-left: 7.438rem
+    margin-left: 5.2rem
       /* 119.008px */
     ;
-    margin-right: 7.438rem
+    margin-right: 5.2rem
       /* 119.008px */
     ;
   }
@@ -145,5 +146,16 @@ code {
   .reasons_flex {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body_margin {
+    margin-left: 7.438rem
+      /* 119.008px */
+    ;
+    margin-right: 7.438rem
+      /* 119.008px */
+    ;
   }
 }

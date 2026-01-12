@@ -266,8 +266,8 @@ function Home() {
         </section>
 
         {/* CONTACTS SECTION */}
-        <section id="contact-us" className=" body_margin flex flex-col md:flex-row justify-center items-center my-12 ">
-          <div className="w-full md:w-[90%] h-full flex flex-col md:flex-col lg:flex-row  space-x-0 md:space-x-16 items-center space-y-6 md:space-y-0">
+        <section id="contact-us" className=" body_margin lg:mr-[7.438rem] lg:ml-[7.438rem] flex flex-col md:flex-row justify-center items-center my-12 ">
+          <div className="w-full md:w-[90%] h-full flex flex-col md:flex-col lg:flex-row  space-x-0 md:space-x-0 lg:space-x-16 items-center space-y-6 md:space-y-12 lg:space-y-0">
             <ContactForm />
             <div className="w-full space-y-6">
               <div className=" ">

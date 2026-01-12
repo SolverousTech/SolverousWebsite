@@ -2,7 +2,7 @@ import Button from '../../components/Buttons/button';
 
 function ContactForm() {
     return (
-        <form className="bg-gradient-to-b from-[#004D8C] to-[#027FE5] space-y-6 md:space-y-4 h-full w-full md:w-[50%] flex flex-col p-8 rounded-2xl">
+        <form className="bg-gradient-to-b from-[#004D8C] to-[#027FE5] space-y-6 md:space-y-4 h-full w-full md:w-full lg:w-[50%] flex flex-col p-8 rounded-2xl">
             
             {/* Full Name */}
             <div className="flex flex-col space-y-1">
