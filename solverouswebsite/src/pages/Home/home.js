@@ -125,7 +125,7 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[90vh] md:h-[60vh] lg:h-[60vh] xl:h-[115vh] 2xl:h-[85vh] text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10 ">
+        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[85vh] md:h-[60vh] lg:h-[60vh] xl:h-[115vh] 2xl:h-[85vh] text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10 ">
           <div className=" body_margin ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
@@ -147,7 +147,7 @@ function Home() {
         </section>
 
         {/* HOW WE BRING IDEAS TO LIFE */}
-        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[240vh] md:h-[45vh] lg:h-[45vh] xl:h-[110vh] 2xl:h-[90vh] text-center items-center content-center space-y-8 ">
+        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[230vh] md:h-[45vh] lg:h-[45vh] xl:h-[110vh] 2xl:h-[90vh] text-center items-center content-center space-y-8 ">
           <div className=" body_margin flex flex-col justify-center items-center space-y-2 md:space-y-2 ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
             <p className=" p_blue_bg w-[90%] md:w-[72%] lg:w-[52%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
