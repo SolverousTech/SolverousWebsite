@@ -90,7 +90,7 @@ function Home() {
           </div>
           <div className=" space-y-6 md:space-y-7 lg:space-y-7 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left ">
             <div className="space-y-0 md:space-y-3 lg:space-y-3 xl:space-y-3">
-              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
+              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-white w-full ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
               <p className=" p_white_bg w-[96%] md:w-full m-auto md:m-0 ">We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.</p>
             </div>
             <div className=" space-y-8 md:space-y-4 lg:space-y-4">
