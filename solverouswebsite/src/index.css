@@ -119,7 +119,7 @@ code {
 }
 
 .contact_icons_container {
-  @apply flex flex-row space-y-3 md:space-y-1 space-x-6 md:space-x-2 items-center;
+  @apply flex flex-row space-y-3 md:space-y-1 space-x-3 md:space-x-2 items-center;
 }
 
 /* Footer icons */

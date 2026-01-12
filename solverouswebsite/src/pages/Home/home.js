@@ -243,7 +243,7 @@ function Home() {
 
         {/* FAQs Section */}
         <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[115vh] md:h-[63vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[55vh] space-y-3 md:space-y-10 lg:space-y-0 ">
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3.5rem] md:mt-8 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3.5rem] md:mt-10 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] md:w-[90%] lg:w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
@@ -267,7 +267,7 @@ function Home() {
 
         {/* CONTACTS SECTION */}
         <section id="contact-us" className=" body_margin flex flex-col md:flex-row justify-center items-center my-12 ">
-          <div className="w-full md:w-[90%] h-full flex flex-col md:flex-row space-x-0 md:space-x-16 items-center space-y-6 md:space-y-0">
+          <div className="w-full md:w-[90%] h-full flex flex-col md:flex-col lg:flex-row  space-x-0 md:space-x-16 items-center space-y-6 md:space-y-0">
             <ContactForm />
             <div className="w-full space-y-6">
               <div className=" ">
