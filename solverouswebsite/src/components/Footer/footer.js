@@ -9,8 +9,8 @@ function Footer() {
         <footer className='bg-[#004D8C] flex flex-col py-14 space-y-14'>
             <div className=' flex flex-col md:flex-row body_margin justify-between items-center space-y-14 md:space-y-0 '>
                 <div className='space-y-8 w-fit'>
-                    <div className=' space-y-5 md:space-y-3 w-full '>
-                        <div className=" w-[8rem] md:w-[7.5rem] h-16 md:h-16 "><img src={logo} alt="Automation Icon" /></div>
+                    <div className=' space-y-1 md:space-y-3 w-full '>
+                        <div className=" w-[6rem] md:w-[7.5rem] h-16 md:h-16 "><img src={logo} alt="Automation Icon" /></div>
                         <p className='text-white text-xl md:text-[1rem] w-full md:w-[60%]'>Empowering Your Business with Expert Solutions and Insights</p>
                     </div>
                     <div className=" flex flex-row space-x-3 w-fit ">
