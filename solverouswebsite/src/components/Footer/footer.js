@@ -11,7 +11,7 @@ function Footer() {
                 <div className='space-y-8 w-fit'>
                     <div className=' space-y-5 md:space-y-3 w-full '>
                         <div className=" w-[8rem] md:w-[7.5rem] h-16 md:h-16 "><img src={logo} alt="Automation Icon" /></div>
-                        <p className='text-white text-2xl md:text-[1rem] w-full md:w-[60%]'>Empowering Your Business with Expert Solutions and Insights</p>
+                        <p className='text-white text-xl md:text-[1rem] w-full md:w-[60%]'>Empowering Your Business with Expert Solutions and Insights</p>
                     </div>
                     <div className=" flex flex-row space-x-3 w-fit ">
                         <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={Facebook} alt="Automation Icon" /></a>
