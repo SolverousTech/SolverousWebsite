@@ -41,13 +41,13 @@ function FAQItem() {
                 return (
                     <div
                         key={index}
-                        className={`h-fit rounded-2xl w-full max-w-5xl transition-all duration-300
+                        className={`h-fit rounded-2xl w-full transition-all duration-300
               ${isOpen ? "bg-white p-6 md:p-8" : "bg-transparent p-0"}
             `}
                     >
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center space-x-5 w-full lg:w-full">
                             <h5
-                                className={`h5_title transition-colors duration-300 w-[87%]
+                                className={`h5_title transition-colors duration-300 w-[87%] md:w-[85%] lg:w-[85%] xl:w-full 2xl:w-[85%]
                   ${isOpen ? "text-[#004D8C]" : "text-white"}
                 `}
                             >
@@ -68,7 +68,7 @@ function FAQItem() {
                         </div>
 
                         <div
-                            className={` w-full md:w-[90%] overflow-hidden transition-all duration-300
+                            className={` w-full md:w-[90%] lg:w-[90%] xl:w-full 2xl:w-[90%] overflow-hidden transition-all duration-300
                 ${isOpen ? "max-h-48 opacity-100 mt-4" : "max-h-0 opacity-0"}
               `}
                         >

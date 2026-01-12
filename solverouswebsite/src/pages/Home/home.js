@@ -242,16 +242,16 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[140vh] md:h-[90vh] ">
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7.438rem] mt-[3.5rem] md:mt-0 w-[84%] md:w-fit space-y-6 justify-center items-start h-[32%] md:h-[77%] ">
+        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[120vh] md:h-[65vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[55vh] space-y-6 md:space-y-10 lg:space-y-6 ">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3.5rem] md:mt-8 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[2rem] md:text-3xl font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
-              <p className=" p_blue_bg w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
+              <p className=" p_blue_bg w-[95%] md:w-[90%] lg:w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
             </div>
             <Button
               title="Contact Us"
               type="none"
-              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 md:px-8 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] transition-all ease-in-out [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
+              buttonCustomStyle=" text-white bg-[#007EE6] hover:bg-[#056CC2] py-3 px-[5%] md:py-2 border-[#007EE6] hover:bg-white hover:border-white hover:text-[#007EE6] transition-all ease-in-out [box-shadow:0_4px_8px_rgba(1,0,0,0.2)] "
               btnFunc={() => {
                 document.getElementById("contact-us")?.scrollIntoView({
                   behavior: "smooth",
@@ -260,7 +260,7 @@ function Home() {
               }}
             />
           </div>
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:mr-[7.438rem] w-[84%] md:w-[80%] justify-center items-start h-[77%]">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[7rem] lg:ml-[2.063rem] md:mr-[7.438rem] w-[84%] md:w-[70%] justify-center items-start h-[77%]">
             <FAQItem />
           </div>
         </section>
