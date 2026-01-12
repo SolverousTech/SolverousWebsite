@@ -63,7 +63,7 @@ code {
 }
 
 .reasons_icon_size {
-  @apply h-20 md:h-20 lg:h-[3.8rem] xl:h-[4rem] 2xl:h-[5rem];
+  @apply h-16 md:h-20 lg:h-[3.8rem] xl:h-[4rem] 2xl:h-[5rem];
 }
 
 /* Why Choose Us 3 reasons margin style */
