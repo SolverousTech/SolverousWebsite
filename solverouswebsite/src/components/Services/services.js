@@ -103,7 +103,7 @@ function Services() {
             <button
                 onClick={() => scroll("right")}
                 className="absolute right-8 md:right-[6rem] top-1/2 -translate-y-1/2 z-10
-                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[0.9rem] md:pl-[1.4rem] pr-[0.5rem] md:pr-[0.8rem] py-[0.7rem] md:py-[1rem]
+                   bg-[#007EE6]/50 text-white shadow-lg rounded-full pl-[1rem] md:pl-[1.4rem] pr-[0.4rem] md:pr-[0.8rem] py-[0.7rem] md:py-[1rem]
                    hover:scale-110 transition active:scale-100"
             >
                 <img src={arrowForward} alt="Arrow Forward" />
