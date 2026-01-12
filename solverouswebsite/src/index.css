@@ -93,7 +93,7 @@ code {
 
 /* Mission, vision, and history container style */
 .about_container_style {
-  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] hover:bg-gradient-to-b hover:from-[#027FE5] hover:to-[#004D8C] h-64 md:h-48 lg:h-44 xl:h-44 2xl:h-44 flex flex-col p-6 rounded-2xl md:rounded-xl justify-center;
+  @apply bg-gradient-to-b from-[#004D8C] to-[#027FE5] hover:bg-gradient-to-b hover:from-[#027FE5] hover:to-[#004D8C] h-[18rem] md:h-48 lg:h-44 xl:h-44 2xl:h-44 flex flex-col p-6 rounded-2xl md:rounded-2xl justify-center;
 }
 
 /* Contact Form Styles */

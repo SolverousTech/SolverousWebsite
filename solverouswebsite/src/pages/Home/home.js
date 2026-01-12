@@ -96,7 +96,7 @@ function Home() {
             <div className=" space-y-8 md:space-y-4">
               {/* FIRST REASON */}
               <div className="reasons_flex reasons_space_between items-center scale_animation w-fit">
-                <div className=" reasons_icon_container reasons_icon_size w-[4rem] md:w-[10rem] lg:w-[10rem] xl:w-[8.5rem] 2xl:w-[7.5rem] "><img src={Automation} alt="Automation" /></div>
+                <div className=" reasons_icon_container reasons_icon_size w-[4rem] md:w-[8.5rem] lg:w-[10rem] xl:w-[8.5rem] 2xl:w-[7.5rem] "><img src={Automation} alt="Automation" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] w-full ">Cutting-Edge Technology</h5>
                   <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-[86%] p_white_bg reasons_margin ">We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.</p>
@@ -105,7 +105,7 @@ function Home() {
 
               {/* SECOND REASON */}
               <div className="reasons_flex reasons_space_between items-center scale_animation w-fit ">
-                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[13rem] lg:w-[13rem] xl:w-[11.2rem] 2xl:w-[10rem] "><img src={Target} alt="Target" /></div>
+                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[11.3rem] lg:w-[13rem] xl:w-[11.2rem] 2xl:w-[10rem] "><img src={Target} alt="Target" /></div>
                 <div>
                   <h5 className=" h5_title text-[#004D8C] w-full ">Client-Centric Approach</h5>
                   <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
@@ -114,7 +114,7 @@ function Home() {
 
               {/* THIRD REASON */}
               <div className=" reasons_flex reasons_space_between items-center scale_animation ">
-                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[9.5rem] lg:w-[9.5rem] xl:w-[8.3rem] 2xl:w-[7.5rem] "><img src={Scaling} alt="Scaling" /></div>
+                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[8rem] lg:w-[9.5rem] xl:w-[8.3rem] 2xl:w-[7.5rem] "><img src={Scaling} alt="Scaling" /></div>
                 <div >
                   <h5 className=" h5_title text-[#004D8C] w-full ">Scalable & Secure Solutions</h5>
                   <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-[90%] p_white_bg reasons_margin ">Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.</p>
@@ -210,21 +210,21 @@ function Home() {
             </div>
 
             <div className=" space-y-6 md:space-y-3 w-full text-left ">
-              <div className=" space-y-8 md:space-y-4">
+              <div className=" space-y-6 md:space-y-4">
                 {/* OUR HISTORY */}
-                <div className=" about_container_style scale_animation ">
+                <div className=" about_container_style scale_animation space-y-2 ">
                   <h5 className=" h5_title text-white ">Our History</h5>
                   <p className=" p_blue_bg ">Founded in January 2024. Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
                 </div>
 
                 {/* OUR VISION */}
-                <div className=" about_container_style scale_animation ">
+                <div className=" about_container_style scale_animation  space-y-2 ">
                   <h5 className=" h5_title text-white ">Our Vision</h5>
                   <p className=" p_blue_bg ">Our goal is to become a leading provider of innovative web and tech solutions globally. We strive to build a dynamic and inclusive company that fosters creativity and drives success. By shaping the future of technology and digital experiences, we aim to support businesses of all sizes.</p>
                 </div>
 
                 {/* OUR MISSION */}
-                <div className="about_container_style scale_animation ">
+                <div className="about_container_style scale_animation  space-y-2 ">
                   <h5 className=" h5_title text-white ">Our Mission</h5>
                   <p className=" p_blue_bg ">We empower businesses by providing innovative and high-quality digital solutions. Our goal is to help clients achieve their objectives through cutting-edge technology. Additionally, we foster a collaborative and growth-oriented environment that supports both experienced professionals and eager learners.</p>
                 </div>
