@@ -14,7 +14,7 @@ function Button({
       className={`
         cursor-pointer w-fit rounded-lg
         transition-all duration-300 active:scale-95
-        text-[0.87rem] md:text-[1rem] lg:text-[0.93rem]
+        text-[0.87rem] md:text-[1rem] lg:text-[0.93rem] xl:text-[0.93rem] 2xl:text-[1rem]
         ${buttonCustomStyle}
       `}
     >
