@@ -62,12 +62,17 @@ code {
 }
 
 .reasons_icon_size {
-  @apply h-20 md:h-20 lg:h-[3.8rem] xl:h-[4rem];
+  @apply h-20 md:h-20 lg:h-[3.8rem] xl:h-[4rem] 2xl:h-[5rem];
 }
 
 /* Why Choose Us 3 reasons margin style */
 .reasons_margin {
   @apply m-auto md:m-0;
+}
+
+/* What We Offer (Services Container) */
+.services {
+  @apply bg-white h-[30rem] md:h-[31rem] lg:h-[29rem] xl:h-[29rem] 2xl:h-[32rem] w-[20rem] md:w-[75%] lg:w-[33%] xl:w-[33%] 2xl:w-[27%] p-7 space-y-6 rounded-3xl md:rounded-2xl lg:rounded-xl xl:rounded-xl 2xl:rounded-3xl snap-start flex-shrink-0 content-center;
 }
 
 /* h5 title style */

@@ -39,7 +39,7 @@ function Services() {
                 className=" body_margin flex flex-row gap-6 overflow-x-hidden scroll-smooth snap-x snap-mandatory scrollbar-hide px-10 "
             >
                 {/* SERVICE 1 */}
-                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
+                <li className="services">
                     <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Websites} alt="Modern Website Development" className=" w-[90%] md:w-[90%] " />
                     </div>
@@ -55,7 +55,7 @@ function Services() {
                 </li>
 
                 {/* SERVICE 2 */}
-                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center ">
+                <li className="services">
                     <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Cloud} alt="Cloud and Infrastructure Services" className=" w-[90%] md:w-[80%] " />
                     </div>
@@ -70,7 +70,7 @@ function Services() {
                 </li>
 
                 {/* SERVICE 3 */}
-                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
+                <li className="services">
                     <div className=" w-fit flex justify-center scale_animation ">
                         <img src={AIautomation} alt="AI and Automation Solutions" className=" w-[90%] md:w-[90%] " />
                     </div>
@@ -85,7 +85,7 @@ function Services() {
                 </li>
 
                 {/* SERVICE 4 */}
-                <li className="bg-white h-[40rem] md:h-[31rem] w-[23rem] md:w-[33%] p-7 space-y-6 rounded-3xl md:rounded-xl snap-start flex-shrink-0 content-center">
+                <li className="services">
                     <div className=" w-fit flex justify-center scale_animation ">
                         <img src={Marketing} alt="Digital Marketing and Customer Engagement" className=" w-[90%] md:w-[75%] " />
                     </div>
