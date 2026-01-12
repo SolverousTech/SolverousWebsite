@@ -1,5 +1,5 @@
 import FAQItem from "../../components/FAQs/faqs";
-import HomeBg from "../../assets/home_bg.png";
+import HomeBg from "../../assets/home_bg1.png";
 import OfferBg from "../../assets/offer_bg.png";
 import ProcessBg from "../../assets/process_bg.png";
 import FAQsBg from "../../assets/faqs_bg.png";
