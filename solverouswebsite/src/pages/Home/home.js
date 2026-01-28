@@ -49,12 +49,18 @@ function Home() {
   };
 
   return (
+    // 2xl for larger screens than the normal laptop screen sizes/desktop sizes
+    // xl for normal laptop screen sizes
+    // lg for tablet screen sizes
+    // md for larger phone screen sizes than the normal ones
+    // no sm, lg, etc. is for the small/ normal phone screen sizes
+
     <>
       <main>
         {/* HOME SECTION */}
         <section id="home" style={homeBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[70vh] lg:h-[95vh] content-center space-y-4 md:space-y-5 lg:space-y-6 ">
           <div className=" space-y-1 md:space-y-2 lg:space-y-3 ">
-            <h1 className=" font-bold text-white text-[2rem] md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl body_margin flex flex-col w-fit [text-shadow:0_4px_6px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#007EE6]">OUR INNOVATION</span></h1>
+            <h1 className=" font-bold text-white text-[2rem] md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl body_margin flex flex-col w-fit [text-shadow:0_4px_6px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#fdfdfd]">OUR INNOVATION</span></h1>
             <p className=" p_blue_bg body_margin w-[65%] md:w-[45%] lg:w-[45%] xl:w-[25%] 2xl:w-[32.5%] ">At Solverous, we build future-ready solutions that transform how businesses operate, connect, and grow—driving innovation and success.</p>
           </div>
           <div className="flex flex-row body_margin space-x-5 md:space-x-3 ">
@@ -84,40 +90,58 @@ function Home() {
         </section>
 
         {/* WHY CHOOSE SOLVEROUS SECTION */}
-        <section className=" body_margin my-12 md:my-16 flex flex-col md:flex-col lg:flex-row space-x-0 md:space-x-0 lg:space-x-0 xl:space-x-20 2xl:space-x-24 space-y-12 md:space-y-10 lg:space-y-10 items-center ">
-          <div className=" w-full md:w-full lg:w-full xl:w-[80%] 2xl:w-[65%] h-full ">
-            <img src={SecondSec} alt="People in A Meeting" className='w-full md:w-full ' />
+        <section className="body_margin my-12 md:my-16 flex flex-col md:flex-col lg:flex-row space-x-0 md:space-x-0 lg:space-x-0 xl:space-x-20 2xl:space-x-24 space-y-12 md:space-y-10 lg:space-y-10 items-center">
+          <div className="w-full md:w-full lg:w-full xl:w-[80%] 2xl:w-[65%] h-full">
+            <img src={SecondSec} alt="People in A Meeting" className='w-full md:w-full' />
           </div>
-          <div className=" space-y-6 md:space-y-7 lg:space-y-7 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left ">
+
+          <div className="space-y-6 md:space-y-7 lg:space-y-7 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left">
             <div className="space-y-0 md:space-y-3 lg:space-y-3 xl:space-y-3">
-              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full ">Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span></h3>
-              <p className=" p_white_bg w-[96%] md:w-full m-auto md:m-0 ">We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.</p>
+              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full">
+                Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span>
+              </h3>
+              <p className="p_white_bg w-[96%] md:w-full m-auto md:m-0">
+                We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.
+              </p>
             </div>
-            <div className=" space-y-8 md:space-y-4 lg:space-y-4">
+
+            <div className="space-y-8 md:space-y-4 lg:space-y-4">
               {/* FIRST REASON */}
-              <div className="reasons_flex reasons_space_between items-center scale_animation w-fit">
-                <div className=" reasons_icon_container reasons_icon_size w-[4rem] md:w-[8.5rem] lg:w-[10rem] xl:w-[28%] 2xl:w-[15%] "><img src={Automation} alt="Automation" /></div>
-                <div>
-                  <h5 className=" h5_title text-[#004D8C] w-full ">Cutting-Edge Technology</h5>
-                  <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin ">We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.</p>
+              <div className="reasons_flex reasons_space_between items-center scale_animation">
+                <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={Automation} alt="Automation" className="w-8 h-8 object-contain" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="h5_title text-[#004D8C] w-full">Cutting-Edge Technology</h5>
+                  <p className="w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin">
+                    We leverage the latest advancements in AI, cloud computing, and cybersecurity to provide innovative tech solutions tailored to your needs.
+                  </p>
                 </div>
               </div>
 
               {/* SECOND REASON */}
-              <div className="reasons_flex reasons_space_between items-center scale_animation w-fit ">
-                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[11.3rem] lg:w-[13rem] xl:w-[38%] 2xl:w-[20%] "><img src={Target} alt="Target" /></div>
-                <div>
-                  <h5 className=" h5_title text-[#004D8C] w-full ">Client-Centric Approach</h5>
-                  <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin ">Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.</p>
+              <div className="reasons_flex reasons_space_between items-center scale_animation">
+                <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={Target} alt="Target" className="w-8 h-8 object-contain" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="h5_title text-[#004D8C] w-full">Client-Centric Approach</h5>
+                  <p className="w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin">
+                    Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.
+                  </p>
                 </div>
               </div>
 
               {/* THIRD REASON */}
-              <div className=" reasons_flex reasons_space_between items-center scale_animation ">
-                <div className="reasons_icon_container reasons_icon_size w-[4rem] md:w-[8rem] lg:w-[9.5rem] xl:w-[28%] 2xl:w-[15%] "><img src={Scaling} alt="Scaling" /></div>
-                <div >
-                  <h5 className=" h5_title text-[#004D8C] w-full ">Scalable & Secure Solutions</h5>
-                  <p className=" w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-[90%] p_white_bg reasons_margin ">Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.</p>
+              <div className="reasons_flex reasons_space_between items-center scale_animation">
+                <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={Scaling} alt="Scaling" className="w-8 h-8 object-contain" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="h5_title text-[#004D8C] w-full">Scalable & Secure Solutions</h5>
+                  <p className="w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-[90%] p_white_bg reasons_margin">
+                    Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.
+                  </p>
                 </div>
               </div>
             </div>
@@ -125,7 +149,7 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[85vh] md:h-[60vh] lg:h-[60vh] xl:h-[120vh] 2xl:h-[90vh] text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10 ">
+        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center h-[85vh] md:h-[60vh] lg:h-[60vh] xl:h-[120vh] 2xl:h-[100vh] text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10 ">
           <div className=" body_margin ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
@@ -147,7 +171,7 @@ function Home() {
         </section>
 
         {/* HOW WE BRING IDEAS TO LIFE */}
-        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[235vh] md:h-[45vh] lg:h-[45vh] xl:h-[115vh] 2xl:h-[100vh] text-center items-center content-center space-y-8 ">
+        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[235vh] md:h-[45vh] lg:h-[45vh] xl:h-[120vh] 2xl:h-[100vh] text-center items-center content-center space-y-8 ">
           <div className=" body_margin flex flex-col justify-center items-center space-y-2 md:space-y-2 ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
             <p className=" p_blue_bg w-[90%] md:w-[72%] lg:w-[52%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
@@ -242,7 +266,7 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] sm:h-fit md:h-[63vh] lg:h-[90vh] xl:h-[92vh] 2xl:h-[57vh] space-y-0 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0 ">
+        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] sm:h-fit md:h-[63vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[65vh] space-y-0 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0 ">
           <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3rem] md:mt-10 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
