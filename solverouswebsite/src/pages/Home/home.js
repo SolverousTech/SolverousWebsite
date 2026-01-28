@@ -161,7 +161,7 @@ function Home() {
         {/* TRUSTED BY */}
         <section id="clients" className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
           <div className=" w-full md:w-[57%] lg:w-[57%] xl:w-[50%] 2xl:w-[80%] space-y-2 ">
-            <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#d3dee7] ">Trusted <span className="text-[#007EE6]">By</span></h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] ">Trusted <span className="text-[#007EE6]">By</span></h3>
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
             </p>
           </div>
