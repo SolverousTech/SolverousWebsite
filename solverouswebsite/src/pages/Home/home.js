@@ -60,7 +60,7 @@ function Home() {
         {/* HOME SECTION */}
         <section id="home" style={homeBg} className=" bg-no-repeat bg-cover bg-center h-[95vh] md:h-[70vh] lg:h-[95vh] content-center space-y-4 md:space-y-5 lg:space-y-6 ">
           <div className=" space-y-1 md:space-y-2 lg:space-y-3 ">
-            <h1 className=" font-bold text-white text-[2rem] md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl body_margin flex flex-col w-fit [text-shadow:0_4px_6px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#fdfdfd]">OUR INNOVATION</span></h1>
+            <h1 className=" font-bold text-white text-[2rem] md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl body_margin flex flex-col w-fit [text-shadow:0_4px_6px_rgba(1,0,0,0.5)] ">YOUR VISION, <span className="text-[#007EE6]">OUR INNOVATION</span></h1>
             <p className=" p_blue_bg body_margin w-[65%] md:w-[45%] lg:w-[45%] xl:w-[25%] 2xl:w-[32.5%] ">At Solverous, we build future-ready solutions that transform how businesses operate, connect, and grow—driving innovation and success.</p>
           </div>
           <div className="flex flex-row body_margin space-x-5 md:space-x-3 ">
