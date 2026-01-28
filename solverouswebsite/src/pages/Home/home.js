@@ -161,7 +161,7 @@ function Home() {
         {/* TRUSTED BY */}
         <section id="clients" className=" body_margin flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 space-x-0 md:space-x-20 my-12 ">
           <div className=" w-full md:w-[57%] lg:w-[57%] xl:w-[50%] 2xl:w-[80%] space-y-2 ">
-            <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] ">Trusted <span className="text-[#007EE6]">By</span></h3>
+            <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#d3dee7] ">Trusted <span className="text-[#007EE6]">By</span></h3>
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
             </p>
           </div>
@@ -171,7 +171,10 @@ function Home() {
         </section>
 
         {/* HOW WE BRING IDEAS TO LIFE */}
-        <section style={processBg} className=" bg-no-repeat bg-cover bg-center h-[235vh] md:h-[45vh] lg:h-[45vh] xl:h-[120vh] 2xl:h-[100vh] text-center items-center content-center space-y-8 ">
+        <section
+          style={processBg}
+          className="bg-no-repeat bg-cover bg-center py-16 md:py-12 lg:py-24 xl:py-28 2xl:py-32 text-center flex flex-col items-center justify-center space-y-8 min-h-[80vh] md:min-h-[50vh] lg:min-h-screen"
+        >
           <div className=" body_margin flex flex-col justify-center items-center space-y-2 md:space-y-2 ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
             <p className=" p_blue_bg w-[90%] md:w-[72%] lg:w-[52%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
@@ -266,8 +269,8 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className=" flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center items-center bg-no-repeat bg-cover bg-center h-[110vh] sm:h-fit md:h-[63vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[65vh] space-y-0 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0 ">
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-[3rem] md:mt-10 lg:mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-6 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
+        <section id="faqs" style={faqsBg} className="flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center md:items-center lg:items-start bg-no-repeat bg-cover bg-center min-h-[100vh] sm:min-h-fit md:min-h-[55vh] lg:min-h-[90vh] xl:min-h-[90vh] 2xl:min-h-[65vh] py-12 md:py-16 lg:py-20 space-y-8 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-4 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] md:w-[90%] lg:w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
