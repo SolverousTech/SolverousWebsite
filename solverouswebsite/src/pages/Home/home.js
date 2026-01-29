@@ -173,7 +173,7 @@ function Home() {
         {/* HOW WE BRING IDEAS TO LIFE */}
         <section
           style={processBg}
-          className="bg-no-repeat bg-cover bg-center py-16 md:py-12 lg:py-24 xl:py-28 2xl:py-32 text-center flex flex-col items-center justify-center space-y-8 min-h-[80vh] md:min-h-[50vh] lg:min-h-screen"
+          className="bg-no-repeat bg-cover bg-center py-16 md:py-12 lg:py-24 xl:py-20 2xl:py-24 text-center flex flex-col items-center justify-center space-y-8 min-h-[80vh] md:min-h-[50vh] lg:min-h-[80vh]"
         >
           <div className=" body_margin flex flex-col justify-center items-center space-y-2 md:space-y-2 ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] w-[70%] md:w-full font-bold text-white ">How We Bring Ideas to Life</h3>
