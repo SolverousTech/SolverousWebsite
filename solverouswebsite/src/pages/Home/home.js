@@ -14,6 +14,7 @@ import Scaling from '../../assets/scaling.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 import ResponsivePicture from "../../components/Image/image_process";
+import Process from "../../components/Process/process";
 import ContactForm from "../../components/Contact/contact";
 import MeetingInTable from "../../assets/meeting_in_table.png";
 import PeopleInMeeting from "../../assets/people_in_meeting3.png";
@@ -181,46 +182,8 @@ function Home() {
           </div>
 
           <div className=" body_margin  relative flex flex-col space-y-[13%] md:space-y-4 ">
-            <ResponsivePicture />
-            {/* LINE AND ICONS REPRSENTING PROCESS */}
-            {/* <div className="absolute flex justify-center top-[2%] md:top-[44%] bottom-0 md:bottom-[64%] bg-slate-500 ">
-              <ResponsivePicture />
-            </div> */}
-
-            {/* <div className="flex flex-col-reverse md:flex-col space-y-24"> */}
-            {/* ABOVE PROCESS */}
-            {/* <div className="flex flex-col md:flex-row space-y-[13%] md:space-y-0 space-x-0 md:space-x-[13%] justify-center"> */}
-            {/* FIRST ABOVE PROCESS */}
-            {/* <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
-                  <h5 className=" h5_title text-[#004D8C] text-left ">Strategize & Plan</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">We craft a tailored strategy — selecting the right technologies, outlining timelines, and defining milestones to ensure transparency and alignment.</p>
-                </div> */}
-            {/* SECOND ABOVE PROCESS */}
-            {/* <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
-                  <h5 className=" h5_title text-[#004D8C] text-left ">Test & Refine</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Before launch, we rigorously test everything — from performance and security to user experience — ensuring a flawless, reliable outcome.</p>
-                </div>
-              </div> */}
-
-            {/* BELOW PROCESS */}
-            {/* <div className="flex flex-col md:flex-row space-y-[13%] md:space-y-0 space-x-0 md:space-x-[13%] justify-center"> */}
-            {/* FIRST BELOW PROCESS */}
-            {/* <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
-                  <h5 className=" h5_title text-[#004D8C] text-left ">Discover & Define</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">We start by understanding your business, objectives, and challenges. Through detailed discussions and research, we define the scope and outcomes you need.</p>
-                </div> */}
-            {/* SECOND BELOW PROCESS */}
-            {/* <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
-                  <h5 className=" h5_title text-[#004D8C] text-left ">Design & Build</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Our team designs intuitive interfaces and develops scalable, high-performance solutions using modern tools and best practices.</p>
-                </div> */}
-            {/* THIRD BELOW PROCESS */}
-            {/* <div className=" bg-white p-7 w-[80%] md:w-[25%] rounded-xl content-center ">
-                  <h5 className=" h5_title text-[#004D8C] text-left ">Launch & Optimize</h5>
-                  <p className=" p_white_bg reasons_margin w-[95%] md:w-full text-left ">Once deployed, we monitor closely, gather feedback, and continuously improve your solution for maximum impact and long-term success.</p>
-                </div> */}
-            {/* </div> */}
-            {/* </div> */}
+            {/* <ResponsivePicture /> */}
+            <Process/>  
           </div>
         </section>
 
