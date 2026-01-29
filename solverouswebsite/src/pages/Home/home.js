@@ -13,7 +13,6 @@ import Target from '../../assets/target.png';
 import Scaling from '../../assets/scaling.png';
 import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
-import ResponsivePicture from "../../components/Image/image_process";
 import Process from "../../components/Process/process";
 import ContactForm from "../../components/Contact/contact";
 import MeetingInTable from "../../assets/meeting_in_table.png";
