@@ -14,14 +14,14 @@ const MeetingImage = () => {
                 className='w-full md:hidden rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
             />
 
-            {/* Medium to Large */}
+            {/* Medium */}
             <img
                 src={MeetingInTablePhone}
                 alt="People in A Meeting"
                 className='hidden md:block lg:hidden w-full rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
             />
 
-            {/* Medium to Large */}
+            {/* Large */}
             <img
                 src={MeetingInTable}
                 alt="People in A Meeting"
