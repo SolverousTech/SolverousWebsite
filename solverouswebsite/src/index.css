@@ -73,7 +73,7 @@ code {
 
 /* What We Offer (Services Container) */
 .services {
-  @apply bg-white min-h-[28rem] md:min-h-[31rem] lg:min-h-[29rem] xl:min-h-[29rem] 2xl:min-h-[70vh] w-[18rem] md:w-[70%] lg:w-[33%] xl:w-[33%] 2xl:w-[38%] p-7 space-y-6 rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl snap-start flex-shrink-0 content-center;
+  @apply bg-white min-h-[28rem] md:min-h-[31rem] lg:min-h-[29rem] xl:min-h-[29rem] 2xl:min-h-[70vh] w-[17rem] md:w-[70%] lg:w-[33%] xl:w-[33%] 2xl:w-[38%] p-7 space-y-6 rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl snap-start flex-shrink-0 content-center;
 }
 
 /* h5 title style */
