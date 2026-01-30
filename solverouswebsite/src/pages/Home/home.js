@@ -15,7 +15,7 @@ import Services from "../../components/Services/services";
 import HomebakerLogo from '../../assets/homebaker_logo.jpg';
 import Process from "../../components/Process/process";
 import ContactForm from "../../components/Contact/contact";
-import MeetingInTable from "../../assets/meeting_in_table.png";
+import MeetingInTable from "../../components/Image/image_meeting";
 import PeopleInMeeting from "../../assets/people_in_meeting3.png";
 import Facebook from "../../assets/facebook.png";
 import WhatsApp from "../../assets/whatsapp.png";
@@ -90,24 +90,29 @@ function Home() {
         </section>
 
         {/* WHY CHOOSE SOLVEROUS SECTION */}
-        <section className="body_margin my-12 md:my-16 flex flex-col md:flex-col lg:flex-row space-x-0 md:space-x-0 lg:space-x-0 xl:space-x-20 2xl:space-x-24 space-y-12 md:space-y-10 lg:space-y-10 items-center">
-          <div className="w-full md:w-full lg:w-full xl:w-[80%] 2xl:w-[65%] h-full">
-            <img src={SecondSec} alt="People in A Meeting" className='w-full md:w-full' />
+        {/* CHANGED: Added min-width constraints and better spacing for very small screens */}
+        <section className="body_margin my-8 sm:my-10 md:my-16 flex flex-col lg:flex-row gap-8 2xl:gap-20 items-center ">
+          {/* CHANGED: Added max-width and better responsive sizing */}
+          <div className="w-full md:w-full lg:w-full lg:max-w-[50%] xl:w-[80%] 2xl:w-[40%] h-full flex-shrink-0">
+            <img src={SecondSec} alt="People in A Meeting" className='w-full h-auto rounded-lg' />
           </div>
 
-          <div className="space-y-6 md:space-y-7 lg:space-y-7 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left">
-            <div className="space-y-0 md:space-y-3 lg:space-y-3 xl:space-y-3">
-              <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full">
+          {/* CHANGED: Added min-width to prevent extreme squishing */}
+          <div className="space-y-4 sm:space-y-5 md:space-y-7 lg:space-y-5 xl:space-y-3 2xl:space-y-5 w-full md:w-full lg:w-full xl:w-[75%] 2xl:w-[75%] text-center md:text-left min-w-0">
+            <div className="space-y-2 md:space-y-3 lg:space-y-3 xl:space-y-3">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-[#004D8C] w-full break-words">
                 Why Choose <span className="text-[#007EE6]">SOLVEROUS?</span>
               </h3>
-              <p className="p_white_bg w-[96%] md:w-full m-auto md:m-0">
+              <p className="p_white_bg w-[96%] md:w-full m-auto md:m-0 text-sm sm:text-base">
                 We focus on real problems, modern technology, and collaborative development to deliver reliable, impactful digital solutions.
               </p>
             </div>
 
-            <div className="space-y-8 md:space-y-4 lg:space-y-4">
+            {/* CHANGED: Added responsive spacing and prevented overflow */}
+            <div className="space-y-6 sm:space-y-7 md:space-y-4 lg:space-y-4">
               {/* FIRST REASON */}
-              <div className="reasons_flex reasons_space_between items-center scale_animation">
+              {/* CHANGED: Added gap and min-width to prevent squishing */}
+              <div className="reasons_flex reasons_space_between items-center scale_animation gap-0 sm:gap-0 md:gap-2">
                 <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
                   <img src={Automation} alt="Automation" className="w-8 h-8 object-contain" />
                 </div>
@@ -120,26 +125,26 @@ function Home() {
               </div>
 
               {/* SECOND REASON */}
-              <div className="reasons_flex reasons_space_between items-center scale_animation">
+              <div className="reasons_flex reasons_space_between items-center scale_animation gap-0 sm:gap-0 md:gap-2">
                 <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <img src={Target} alt="Target" className="w-8 h-8 object-contain" />
+                  <img src={Target} alt="Target" className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain" />
                 </div>
-                <div className="flex-1">
-                  <h5 className="h5_title text-[#004D8C] w-full">Client-Centric Approach</h5>
-                  <p className="w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-full p_white_bg reasons_margin">
+                <div className="flex-1 min-w-0">
+                  <h5 className="h5_title text-[#004D8C] w-full text-sm sm:text-base md:text-lg break-words">Client-Centric Approach</h5>
+                  <p className="w-full p_white_bg reasons_margin text-xs sm:text-sm md:text-base break-words">
                     Your goals and vision are at the center of everything we do. We collaborate closely with you throughout the process to ensure the final solution truly meets your needs and expectations.
                   </p>
                 </div>
               </div>
 
               {/* THIRD REASON */}
-              <div className="reasons_flex reasons_space_between items-center scale_animation">
+              <div className="reasons_flex reasons_space_between items-center scale_animation gap-0 sm:gap-0 md:gap-2">
                 <div className="reasons_icon_container reasons_icon_size w-16 h-16 md:w-20 md:h-20 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <img src={Scaling} alt="Scaling" className="w-8 h-8 object-contain" />
+                  <img src={Scaling} alt="Scaling" className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain" />
                 </div>
-                <div className="flex-1">
-                  <h5 className="h5_title text-[#004D8C] w-full">Scalable & Secure Solutions</h5>
-                  <p className="w-[93%] md:w-[93%] lg:w-[93%] xl:w-[95%] 2xl:w-[90%] p_white_bg reasons_margin">
+                <div className="flex-1 min-w-0">
+                  <h5 className="h5_title text-[#004D8C] w-full text-sm sm:text-base md:text-lg break-words">Scalable & Secure Solutions</h5>
+                  <p className="w-full p_white_bg reasons_margin text-xs sm:text-sm md:text-base break-words">
                     Our solutions are designed to grow alongside your business, with scalability, security, and stability built in to support long-term success.
                   </p>
                 </div>
@@ -149,7 +154,7 @@ function Home() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section id="services" style={offerBg} className=" bg-no-repeat bg-cover bg-center min-h-[85vh] md:min-h-[60vh] lg:min-h-[60vh] xl:min-h-[120vh] 2xl:min-h-[105vh] text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10 ">
+        <section id="services" style={offerBg} className="bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-24 xl:py-20 2xl:py-32 text-center content-center space-y-8 md:space-y-8 lg:space-y-8 xl:space-y-8 2xl:space-y-10">
           <div className=" body_margin ">
             <h3 className="text-[1.5rem] md:text-3xl lg:text-3xl xl:text-[2rem] 2xl:text-[2.5rem] font-bold text-white ">What We Offer</h3>
             <p className=" p_blue_bg ">A wide range of systems designed to elevate your business operations
@@ -181,7 +186,7 @@ function Home() {
           </div>
 
           <div className=" body_margin  relative flex flex-col space-y-[13%] md:space-y-4 ">
-            <Process/>  
+            <Process />
           </div>
         </section>
 
@@ -192,10 +197,9 @@ function Home() {
             <p className=" p_white_bg w-[96%] md:w-full lg:w-full xl:w-[67%] 2xl:w-[67%] ">Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
           </div>
 
-          <div className="flex flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-7 2xl:space-x-7 space-y-10 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center">
-            <div className=" w-full md:w-full lg:w-full xl:w-[71%] 2xl:w-[45%] h-full ">
-              <img src={MeetingInTable} alt="People in A Meeting" className='w-full md:w-fit rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]' />
-            </div>
+          <div className="flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-5 2xl:space-x-6 space-y-10 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center ">
+            
+            <MeetingInTable/>  
 
             <div className=" space-y-6 md:space-y-3 w-full text-left ">
               <div className=" space-y-6 md:space-y-4">
@@ -206,7 +210,7 @@ function Home() {
                 </div>
 
                 {/* OUR VISION */}
-                <div className=" about_container_style scale_animation  space-y-2 ">
+                <div className=" about_container_style scale_animation space-y-2 ">
                   <h5 className=" h5_title text-white ">Our Vision</h5>
                   <p className=" p_blue_bg ">Our goal is to become a leading provider of innovative web and tech solutions globally. We strive to build a dynamic and inclusive company that fosters creativity and drives success. By shaping the future of technology and digital experiences, we aim to support businesses of all sizes.</p>
                 </div>

@@ -1,11 +1,10 @@
-import ResponsivePicture from "../../components/Image/image_process";
 import processIcon1 from "../../assets/process1.png"
 import processIcon2 from "../../assets/process2.png"
 
 function Process() {
     return (
         <div>
-            {/* MOBILE VIEW - Shows only centered icon */}
+            {/* MOBILE VIEW */}
             <div className="md:hidden flex flex-row items-center space-x-6">
                 <img
                     src={processIcon2}
@@ -42,7 +41,7 @@ function Process() {
                 </div>
             </div>
 
-            {/* TABLET VIEW - Added responsive layout for tablets */}
+            {/* TABLET VIEW */}
             <div className="hidden md:block xl:hidden">
                 <div className="flex flex-col space-y-8">
                     {/* Two-column grid for tablet */}
@@ -85,8 +84,8 @@ function Process() {
                 </div>
             </div>
 
-            {/* DESKTOP VIEW - Original layout with icon in middle */}
-            <div className="hidden lg:block">
+            {/* DESKTOP VIEW */}
+            <div className="hidden xl:block">
                 <div className="flex flex-col-reverse space-y-6">
                     {/* ABOVE PROCESS */}
                     <div className="flex flex-row space-x-[13%] justify-center">
