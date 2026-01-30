@@ -197,12 +197,12 @@ function Home() {
             <p className=" p_white_bg w-[96%] md:w-full lg:w-full xl:w-[67%] 2xl:w-[67%] ">Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
           </div>
 
-          <div className="flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-5 2xl:space-x-6 space-y-10 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center ">
+          <div className="flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-5 2xl:space-x-6 space-y-6 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center ">
             
             <MeetingInTable/>  
 
-            <div className=" space-y-6 md:space-y-3 w-full text-left ">
-              <div className=" space-y-6 md:space-y-4">
+            <div className=" w-full text-left ">
+              <div className=" space-y-3 md:space-y-4">
                 {/* OUR HISTORY */}
                 <div className=" about_container_style scale_animation space-y-2 ">
                   <h5 className=" h5_title text-white ">Our History</h5>
@@ -234,8 +234,8 @@ function Home() {
         </section>
 
         {/* FAQs Section */}
-        <section id="faqs" style={faqsBg} className="flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center md:items-center lg:items-start bg-no-repeat bg-cover bg-center min-h-[100vh] sm:min-h-fit md:min-h-[55vh] lg:min-h-[90vh] xl:min-h-[90vh] 2xl:min-h-[65vh] py-12 md:py-16 lg:py-20 space-y-8 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0">
-          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-4 md:space-y-4 justify-center items-start h-[32%] md:h-fit lg:h-[77%] ">
+        <section id="faqs" style={faqsBg} className="flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center md:items-center lg:items-start bg-no-repeat bg-cover bg-center py-12 md:py-16 lg:py-20 space-y-8 sm:space-y-[-2rem] md:space-y-10 lg:space-y-0">
+          <div className=" mr-[2.063rem] ml-[2.063rem] md:ml-[1.5rem] lg:ml-[7.4rem] mt-0 w-[84%] md:w-[71%] lg:w-fit space-y-4 md:space-y-4 justify-center items-start">
             <div className=" w-full md:w-full space-y-2 ">
               <h3 className="text-[1.5rem] md:text-3xl lg:text-[2rem] font-bold text-white ">Frequently <span className="text-[#0889f1]">Asked Questions</span></h3>
               <p className=" p_blue_bg w-[95%] md:w-[90%] lg:w-[95%] ">We follow a thoughtful, collaborative process to ensure every solution we deliver is aligned with your vision, goals, and growth.</p>
