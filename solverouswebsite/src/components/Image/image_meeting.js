@@ -11,21 +11,21 @@ const MeetingImage = () => {
             <img
                 src={MeetingInTablePhone}
                 alt="People in A Meeting"
-                className='w-full md:hidden rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
+                className='w-full md:hidden rounded-xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
             />
 
             {/* Medium */}
             <img
                 src={MeetingInTablePhone}
                 alt="People in A Meeting"
-                className='hidden md:block lg:hidden w-full rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
+                className='hidden md:block lg:hidden w-full rounded-xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
             />
 
             {/* Large */}
             <img
                 src={MeetingInTable}
                 alt="People in A Meeting"
-                className='hidden lg:block xl:hidden w-full rounded-2xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
+                className='hidden lg:block xl:hidden w-full rounded-xl [box-shadow:4px_4px_13px_rgba(1,0,0,0.5)]'
             />
 
             {/* XL */}
