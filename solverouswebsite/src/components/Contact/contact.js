@@ -110,7 +110,7 @@ function ContactForm() {
             <button
                 type="submit"
                 disabled={loading}
-                className="bg-white text-[#007EE6] hover:bg-[#DDE7EF] py-3 px-[42.5%] md:py-2 md:px-[46%] rounded shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-white text-[#007EE6] hover:bg-[#DDE7EF] py-3 px-[42.5%] md:py-2 md:px-[46%] rounded-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 {loading ? "Sending..." : "Send"}
             </button>

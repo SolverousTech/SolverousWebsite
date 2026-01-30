@@ -94,7 +94,7 @@ function Home() {
         <section className="body_margin my-8 sm:my-10 md:my-16 flex flex-col lg:flex-row gap-8 2xl:gap-20 items-center ">
           {/* CHANGED: Added max-width and better responsive sizing */}
           <div className="w-full md:w-full lg:w-full lg:max-w-[50%] xl:w-[80%] 2xl:w-[40%] h-full flex-shrink-0">
-            <img src={SecondSec} alt="People in A Meeting" className='w-full h-auto rounded-lg' />
+            <img src={SecondSec} alt="People in A Meeting" className='w-full h-auto' />
           </div>
 
           {/* CHANGED: Added min-width to prevent extreme squishing */}
@@ -170,7 +170,7 @@ function Home() {
             <p className=" p_white_bg ">We are proud to work with clients who place their trust in Solverous. Through collaboration, innovation, and a commitment to quality, we build lasting partnerships and deliver technology solutions that create real value and long-term impact.
             </p>
           </div>
-          <div className=" p-4 bg-white shadow-lg rounded-2xl hover:shadow-[#004d8cb6] transition-all ease-in-out scale_animation hover:[box-shadow:0px_0px_15px_#004d8cb6] ">
+          <div className=" p-4 bg-white shadow-lg rounded-lg xl:rounded-xl hover:shadow-[#004d8cb6] transition-all ease-in-out scale_animation hover:[box-shadow:0px_0px_15px_#004d8cb6] ">
             <img src={HomebakerLogo} alt="Homebaker Logo" className="w-44 md:w-36 lg:w-36 xl:w-36 2xl:md:w-48" />
           </div>
         </section>
