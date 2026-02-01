@@ -30,7 +30,7 @@ function Footer() {
                             <ul className="space-y-3">
                                 <li><a href="https://luna.solverous.com/" target="_blank" rel="noopener noreferrer" className="hover:underline p_blue_bg">Luna AI</a></li>
                                 <li><span className='p_blue_bg'>DTR System</span></li>
-                                <li><a href="https://yukoai-d9c63.web.app/" target="_blank" rel="noopener noreferrer" className='p_blue_bg'>Yuko AI</a></li>
+                                <li><a href="https://yukoai-d9c63.web.app/" target="_blank" rel="noopener noreferrer" className='hover:underline p_blue_bg'>Yuko AI</a></li>
                             </ul>
                         </div>
                         {/* SERVICES LINK */}

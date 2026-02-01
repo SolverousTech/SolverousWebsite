@@ -18,7 +18,7 @@ function ContactForm() {
         emailjs.sendForm(serviceID, templateID, e.target, userID)
             .then((result) => {
                 console.log('Success:', result.text);
-                setStatus('Message sent successfully! 🎉');
+                setStatus('Message sent successfully!');
                 setLoading(false);
                 e.target.reset();
             })
@@ -100,20 +100,20 @@ function ContactForm() {
                 />
             </div>
 
-            {/* Status Message */}
-            {status && (
-                <p className={`text-center font-medium ${status.includes('Success') ? 'text-green-300' : 'text-red-300'}`}>
-                    {status}
-                </p>
-            )}
-
             <button
                 type="submit"
                 disabled={loading}
-                className="bg-white text-[#007EE6] hover:bg-[#DDE7EF] py-3 px-[42.5%] md:py-2 md:px-[46%] rounded-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-white text-[#007EE6] hover:bg-[#DDE7EF] py-3 md:py-2 rounded-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 {loading ? "Sending..." : "Send"}
             </button>
+
+            {/* Status Message */}
+            {status && (
+                <p className={`text-center font-medium ${status.includes('Success') ? 'text-red-300' : 'text-white'}`}>
+                    {status}
+                </p>
+            )}
         </form>
     );
 }
