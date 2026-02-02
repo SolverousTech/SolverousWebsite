@@ -1,6 +1,6 @@
 import React from 'react';
 import Facebook from "../../assets/facebook.png";
-import WhatsApp from "../../assets/whatsapp.png";
+import Instagram from "../../assets/instagram.png";
 import LinkedIn from "../../assets/linkedin.png";
 import logo from '../../assets/solverous2.png';
 
@@ -17,9 +17,9 @@ function Footer() {
                     </div>
                     {/* SOCMED ICONS */}
                     <div className=" flex flex-row space-x-3 w-fit ">
-                        <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={Facebook} alt="Automation Icon" /></a>
-                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={WhatsApp} alt="Automation Icon" /></a>
-                        <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 "><img src={LinkedIn} alt="Automation Icon" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 p-4"><img src={Facebook} alt="Automation Icon" /></a>
+                        <a href="https://www.instagram.com/solverous?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 p-4 "><img src={Instagram} alt="Automation Icon" /></a>
+                        <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" footer_icons hover:bg-[#007EE6] hover:border-collapse transition-all ease-in-out active:scale-95 p-4 "><img src={LinkedIn} alt="Automation Icon" /></a>
                     </div>
                 </div>
                 <div className='flex flex-row text-white space-x-0 md:space-x-6 '>

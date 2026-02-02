@@ -18,7 +18,7 @@ import ContactForm from "../../components/Contact/contact";
 import MeetingInTable from "../../components/Image/image_meeting";
 import PeopleInMeeting from "../../assets/people_in_meeting3.png";
 import Facebook from "../../assets/facebook.png";
-import WhatsApp from "../../assets/whatsapp.png";
+import Instagram from "../../assets/instagram.png";
 import LinkedIn from "../../assets/linkedin.png";
 
 function Home() {
@@ -289,11 +289,11 @@ function Home() {
               <div className="bg-[#007EE6] h-[0.1rem] w-full"></div>
               <div className=" items-center flex flex-row w-[100%] justify-end space-x-4 ">
                 {/* FACEBOOK */}
-                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={Facebook} alt="Facebook" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61573101443685" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container p-4"><img src={Facebook} alt="Facebook" /></a>
                 {/* WHATSAPP */}
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={WhatsApp} alt="WhatsApp" /></a>
+                <a href="https://www.instagram.com/solverous?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container p-4 "><img src={Instagram} alt="Instagram" /></a>
                 {/* LINKEDIN */}
-                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container "><img src={LinkedIn} alt="LinkedIn" /></a>
+                <a href="https://www.linkedin.com/company/solverous" target="_blank" rel="noopener noreferrer" className=" gradient_bg socmed_container p-4 "><img src={LinkedIn} alt="LinkedIn" /></a>
               </div>
             </div>
           </div>
