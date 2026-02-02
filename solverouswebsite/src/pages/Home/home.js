@@ -197,7 +197,7 @@ function Home() {
             <p className=" p_white_bg w-[96%] md:w-full lg:w-full xl:w-[67%] 2xl:w-[67%] ">Solverous is a fresh, innovative start-up focused on providing high-quality digital solutions. Although we are in the early stages of our journey, we’re driven by a strong vision to revolutionize web development and tech services.</p>
           </div>
 
-          <div className="flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-5 2xl:space-x-6 space-y-6 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center ">
+          <div className="flex flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row space-x-0 md:space-x-0 lg:space-x-7 xl:space-x-8 2xl:space-x-10 space-y-6 md:space-y-10 lg:space-y-0 xl:space-y-0 2xl:space-y-0 justify-center items-center ">
             
             <MeetingInTable/>  
 
