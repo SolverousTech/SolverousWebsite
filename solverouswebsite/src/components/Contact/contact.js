@@ -7,15 +7,15 @@ function ContactForm() {
 
     const sendMessage = (e) => {
         e.preventDefault();
-        console.log('clikced')
         setLoading(true);
         setStatus('');
 
-        const serviceID = 'service_dyfx6bh';
-        const templateID = 'template_eks2zfp';
-        const userID = 'G6UMIDUlrYExt7MqJ';
-
-        emailjs.sendForm(serviceID, templateID, e.target, userID)
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
             .then((result) => {
                 console.log('Success:', result.text);
                 setStatus('Message sent successfully! 🎉');
@@ -28,7 +28,6 @@ function ContactForm() {
                 setLoading(false);
             });
     };
-
     return (
         <form onSubmit={sendMessage} className="bg-gradient-to-b from-[#004D8C] to-[#027FE5] space-y-6 md:space-y-4 h-full w-full md:w-full lg:w-[50%] flex flex-col p-8 rounded-2xl">
 
