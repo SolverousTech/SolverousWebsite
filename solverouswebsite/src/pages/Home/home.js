@@ -271,13 +271,13 @@ function Home() {
                 {/* PHONE */}
                 <div className="contact_icons_container ">
                   <div className=" gradient_bg reasons_icon_container contact_icons "><img src={Phone} alt="Phone" /></div>
-                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">+63 921 808 7458</p>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">+63 985 547 1434</p>
                 </div>
 
                 {/* EMAIL */}
                 <div className="contact_icons_container">
                   <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsttGvFFcMCqMQKdwjzndSwrgjdNPKnWBzcnshffGttnvDTdnThLScQzTxLQpkSgwdSBjXCl" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Mail} alt="Mail" /></a>
-                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">solveroustech@gmail.com</p>
+                  <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">info@solverous.com</p>
                 </div>
 
                 {/* LOCATION */}

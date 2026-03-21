@@ -109,11 +109,12 @@ function ContactForm() {
 
             {/* Status Message */}
             {status && (
-                <p className={`text-center font-medium ${status.includes('Success') ? 'text-red-300' : 'text-white'}`}>
-                    {status}
-                </p>
-            )}
-        </form>
+                <p className={`text-center font-medium ${status.includes('Success') ? 'text-green-300' : 'text-red-300'}`}>
+            {status}
+        </p>
+    )
+}
+        </form >
     );
 }
 
