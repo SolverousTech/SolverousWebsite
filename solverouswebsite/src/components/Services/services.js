@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react";
-import Websites from "../../assets/modern_website.png";
-import Cloud from "../../assets/cloud.png";
-import AIautomation from "../../assets/ai_automation.png";
-import Marketing from "../../assets/marketing.png";
+import Websites from "../../assets/modern_website.webp";
+import Cloud from "../../assets/cloud.webp";
+import AIautomation from "../../assets/ai_automation.webp";
+import Marketing from "../../assets/marketing.webp";
 import arrowBack from "../../assets/arrow_back.png"
 import arrowForward from "../../assets/arrow_forward.png"
 

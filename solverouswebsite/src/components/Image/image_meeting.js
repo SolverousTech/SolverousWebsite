@@ -1,7 +1,7 @@
 // ResponsivePicture.jsx
 import React from 'react';
-import MeetingInTable from "../../assets/meeting_in_table.png";
-import MeetingInTablePhone from "../../assets/meeting_in_table_phone_tablet.png";
+import MeetingInTable from "../../assets/meeting_in_table.webp";
+import MeetingInTablePhone from "../../assets/meeting_in_table_phone_tablet.webp";
 
 const MeetingImage = () => {
     return (
