@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from '../../assets/solverous_logo.png';
+import logo from '../../assets/solverous_logo.webp';
 import Button from '../Buttons/button';
 
 function Navbar() {

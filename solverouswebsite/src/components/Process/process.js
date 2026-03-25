@@ -1,5 +1,5 @@
 import processIcon1 from "../../assets/process1.png"
-import processIcon2 from "../../assets/process2.png"
+import processIcon2 from "../../assets/process2.webp"
 
 function Process() {
     return (
