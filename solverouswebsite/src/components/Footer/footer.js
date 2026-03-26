@@ -1,7 +1,7 @@
 import React from 'react';
-import Facebook from "../../assets/facebook.png";
-import Instagram from "../../assets/instagram.png";
-import LinkedIn from "../../assets/linkedin.png";
+import Facebook from "../../assets/facebook.webp";
+import Instagram from "../../assets/instagram.webp";
+import LinkedIn from "../../assets/linkedin.webp";
 import logo from '../../assets/solverous2.png';
 
 function Footer() {
