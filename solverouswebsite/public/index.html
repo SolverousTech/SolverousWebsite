@@ -3,21 +3,52 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/solverous_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#007EE6" />
 
-  <title>Solverous</title>
+  <title>Solverous | Software Company in The Philippines</title>
+
+  <link rel="icon" href="%PUBLIC_URL%/solverous_logo.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- ADDED: Canonical URL to prevent duplicate content issues -->
+  <link rel="canonical" href="https://www.solverous.com" />
 
   <meta name="description"
-    content="Transform your business with Solverous - expert AI solutions, custom software development, web & mobile apps. Trusted by startups and enterprises for cutting-edge tech services." />
+    content="Solverous delivers AI-powered software, POS systems, custom web & mobile apps, and IT consultancy in the Philippines. Trusted by startups, SMEs, and enterprises for digital transformation and cutting-edge tech solutions." />
 
   <meta name="keywords"
-    content="AI software development, custom web applications, mobile app development, AI automation solutions, enterprise software development, startup tech solutions, cloud infrastructure services, digital transformation, Philippines tech company, AI chatbot development" />
+    content="POS system Philippines, point of sale software, AI software development, custom web applications, mobile app development, IT consultancy Philippines, AI automation solutions, enterprise software, startup tech solutions, cloud infrastructure, digital transformation, AI chatbot development, business management software, inventory management system, restaurant POS, retail POS system" />
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="Solverous" />
+  <meta name="language" content="English" />
+  <meta name="geo.region" content="PH" />
+  <meta name="geo.placename" content="Philippines" />
+  <meta name="geo.position" content="14.5995;120.9842" />
+  <meta name="ICBM" content="14.5995, 120.9842" />
 
-  <!-- ADDED: Canonical URL to prevent duplicate content issues -->
-  <link rel="canonical" href="https://www.solverous.com" />
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Solverous" />
+  <meta property="og:title" content="Solverous | AI Software, POS Systems & Web Development Philippines" />
+  <meta property="og:description"
+    content="Solverous delivers AI-powered software, POS systems, custom web & mobile apps, and IT consultancy in the Philippines. Built for startups, SMEs, and enterprises." />
+  <meta property="og:image" content="https://www.solverous.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Solverous - AI Software and POS Systems Philippines" />
+  <meta property="og:url" content="https://www.solverous.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@solverous" />
+  <meta name="twitter:title" content="Solverous | AI Software, POS Systems & Web Development Philippines" />
+  <meta name="twitter:description"
+    content="AI-powered software, POS systems, custom web & mobile apps, and IT consultancy in the Philippines." />
+  <meta name="twitter:image" content="https://www.solverous.com/twitter-image.png" />
+  <meta name="twitter:image:alt" content="Solverous - AI Software and POS Systems Philippines" />
 
   <!-- ADDED: Language and geo-targeting -->
   <meta name="language" content="English" />
@@ -44,7 +75,7 @@
     content="Transform your business with expert AI solutions, custom software development, and cutting-edge tech services." />
   <meta name="twitter:image" content="https://www.solverous.com/twitter-image.png" />
 
-  <!-- ADDED: Schema.org structured data for better search understanding -->
+  <!-- Schema.org structured data for better search understanding -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,10 +83,11 @@
     "name": "Solverous",
     "url": "https://www.solverous.com",
     "logo": "https://www.solverous.com/solverous_logo.png",
-    "description": "AI-powered software and web development solutions",
+    "description": "AI-powered software, POS systems, custom web and mobile app development, and IT consultancy in the Philippines.",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "PH"
+      "addressCountry": "PH",
+      "addressRegion": "Metro Manila"
     },
     "contactPoint": {
       "@type": "ContactPoint",
@@ -66,14 +98,47 @@
       "https://www.facebook.com/profile.php?id=61573101443685",
       "https://www.linkedin.com/company/solverous",
       "https://www.instagram.com/solverous?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Solverous Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "POS System Development",
+            "description": "Custom point of sale systems for retail, restaurant, and enterprise businesses in the Philippines."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI Software Development",
+            "description": "AI-powered automation and software solutions for businesses."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web & Mobile App Development",
+            "description": "Custom web and mobile applications for startups and enterprises."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "IT Consultancy",
+            "description": "Expert IT consultancy services for digital transformation and cloud infrastructure."
+          }
+        }
+      ]
+    }
   }
   </script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#007EE6" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 </head>
 
 <body>
