@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#007EE6" />
 
-  <title>Solverous | Software Company in Antipolo Rizal, Philippines</title>
+  <title>Software Company in Antipolo, Rizal | AI, POS & Web Development Philippines | Solverous</title>
 
   <link rel="icon" href="%PUBLIC_URL%/solverous_logo.png" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <!-- ADDED: Canonical URL to prevent duplicate content issues -->
   <link rel="canonical" href="https://www.solverous.com" />
+  <link rel="preconnect" href="https://www.solverous.com">
 
   <meta name="description"
     content="Solverous is a software company based in Antipolo, Rizal offering AI software, POS systems, web and mobile app development for businesses across Metro Manila and the Philippines." />
 
   <meta name="keywords"
-    content="software company Antipolo, software company Rizal, software company BGC, IT company Antipolo Rizal, web development Antipolo, app development Rizal, POS system Philippines, point of sale software, AI software development Philippines, custom web applications, mobile app development, IT consultancy Philippines, AI automation solutions, enterprise software Philippines, startup tech solutions, digital transformation Philippines, software developer near me Philippines, tech company Antipolo, tech company BGC Taguig"/>
+    content="software company Antipolo, software company Rizal, software company BGC, IT company Antipolo Rizal, web development Antipolo, app development Rizal, POS system Philippines, point of sale software, AI software development Philippines, custom web applications, mobile app development, IT consultancy Philippines, AI automation solutions, enterprise software Philippines, startup tech solutions, digital transformation Philippines, software developer near me Philippines, tech company Antipolo, tech company BGC Taguig" />
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="Solverous" />
@@ -50,23 +51,6 @@
   <meta name="twitter:image" content="https://www.solverous.com/twitter-image.png" />
   <meta name="twitter:image:alt" content="Solverous - AI Software and POS Systems Philippines" />
 
-  <!-- ADDED: Language and geo-targeting -->
-  <meta name="language" content="English" />
-  <meta name="geo.region" content="PH" />
-  <meta name="geo.position" content="14.5995;120.9842" />
-
-  <!-- Open Graph for social sharing -->
-  <meta property="og:site_name" content="Solverous" />
-  <meta property="og:title" content="Solverous | AI-Powered Software & Web Development Solutions" />
-  <meta property="og:description"
-    content="Transform your business with expert AI solutions, custom software development, and cutting-edge tech services tailored for startups and enterprises." />
-  <meta property="og:image" content="https://www.solverous.com/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://www.solverous.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@solverous" />
@@ -79,7 +63,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "SoftwareCompany",
     "name": "Solverous",
     "url": "https://www.solverous.com",
     "logo": "https://www.solverous.com/solverous_logo.png",
@@ -88,11 +72,13 @@
       "@type": "PostalAddress",
       "addressLocality": "Antipolo",
       "addressRegion": "Rizal",
+      "postalCode": "1870",
       "addressCountry": "PH"
     },
-    "areaServed": [
-      "Antipolo", "Rizal", "BGC", "Taguig", "Metro Manila", "Philippines"
-    ],
+    "areaServed": {
+      "@type": "Place",
+      "name": "Philippines"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
