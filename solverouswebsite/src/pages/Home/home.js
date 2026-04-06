@@ -282,7 +282,7 @@ function Home() {
 
                 {/* LOCATION */}
                 <div className="contact_icons_container">
-                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Location} alt="Location" /></a>
+                  <a href="https://maps.app.goo.gl/eGSJF9aUpXrBs7ur5" target="_blank" rel="noopener noreferrer" className=" gradient_bg reasons_icon_container contact_icons active:scale-95 transition-all ease-in-out "><img src={Location} alt="Address" /></a>
                   <p className=" w-[93%] md:w-[95%] p_white_bg reasons_margin ">Antipolo City, 1870 Rizal, Philippines</p>
                 </div>
               </div>
