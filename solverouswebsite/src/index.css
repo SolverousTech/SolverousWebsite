@@ -76,6 +76,10 @@ code {
   @apply bg-white min-h-[28rem] md:min-h-[31rem] lg:min-h-[29rem] xl:min-h-[29rem] 2xl:min-h-[70vh] w-[17rem] md:w-[70%] lg:w-[33%] xl:w-[33%] 2xl:w-[38%] p-7 space-y-6 rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl snap-start flex-shrink-0 content-center;
 }
 
+.partners_logo {
+  @apply shadow-lg rounded-lg xl:rounded-xl bg-white hover:shadow-[#004d8cb6] transition-all ease-in-out scale_animation hover:[box-shadow:0px_0px_15px_#004d8cb6] w-44 md:w-36 lg:w-36 xl:w-36 2xl:w-48 h-44 md:h-36 lg:h-36 xl:h-36 2xl:h-48 justify-center;
+}
+
 /* h5 title style */
 .h5_title {
   @apply font-bold text-[1rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-xl 2xl:text-2xl;
