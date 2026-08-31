@@ -72,7 +72,7 @@ function Home() {
           </p>
         </div>
         <div className="flex flex-row body_margin space-x-5 md:space-x-3 ">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdduNPGWuZ3kG0uf0r4obwctjM61FewMMCOr--1EPvNLKJjVQ/viewform?usp=sharing&ouid=110671548751338016594" target="_blank" rel="noreferrer">
+          <a href="https://calendly.com/solverous/30min" target="_blank" rel="noreferrer">
             <Button
               title="Book a FREE Consultation"
               type="none"
